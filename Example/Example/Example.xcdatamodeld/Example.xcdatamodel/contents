@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Notification">
+        <attribute name="age" optional="YES" attributeType="Date">
+            <userInfo/>
+        </attribute>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sender" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="notifications" inverseEntity="User" syncable="YES"/>
+        <userInfo/>
+    </entity>
+    <entity name="User" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="notifications" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Notification" inverseName="sender" inverseEntity="Notification" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Notification" positionX="261" positionY="189" width="128" height="120"/>
+        <element name="User" positionX="160" positionY="192" width="128" height="105"/>
+    </elements>
+</model>

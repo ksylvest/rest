@@ -1,0 +1,5 @@
+build
+*.xcodeproj/*.mode*
+*.xcodeproj/*.pbxuser
+*.xcodeproj/*.xcworkspace
+*.xcodeproj/xcuserdata

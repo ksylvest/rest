@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A0E010D169A321F00DE0095 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0E010C169A321F00DE0095 /* Foundation.framework */; };
+		0A0E0112169A321F00DE0095 /* REST.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A0E0111169A321F00DE0095 /* REST.h */; };
+		0A0E0114169A321F00DE0095 /* REST.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E0113169A321F00DE0095 /* REST.m */; };
+		0A0E011C169A321F00DE0095 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0E011B169A321F00DE0095 /* SenTestingKit.framework */; };
+		0A0E011E169A321F00DE0095 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0E011D169A321F00DE0095 /* UIKit.framework */; };
+		0A0E011F169A321F00DE0095 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0E010C169A321F00DE0095 /* Foundation.framework */; };
+		0A0E0122169A321F00DE0095 /* libREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0E0109169A321F00DE0095 /* libREST.a */; };
+		0A0E0128169A321F00DE0095 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A0E0126169A321F00DE0095 /* InfoPlist.strings */; };
+		0A0E012B169A321F00DE0095 /* RESTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E012A169A321F00DE0095 /* RESTTests.m */; };
+		0A0E01A9169A34F000DE0095 /* NSData+REST_Encodings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E01A8169A34F000DE0095 /* NSData+REST_Encodings.m */; };
+		0A0E01AD169A34FE00DE0095 /* NSObject+REST.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E01AC169A34FE00DE0095 /* NSObject+REST.m */; };
+		0A0E01B0169A350700DE0095 /* NSString+REST_Inflections.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E01AF169A350700DE0095 /* NSString+REST_Inflections.m */; };
+		0A0E01B3169A351300DE0095 /* NSString+REST_Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E01B2169A351300DE0095 /* NSString+REST_Regex.m */; };
+		0A0E01B6169A352A00DE0095 /* NSString+REST_Encodings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E01B5169A352A00DE0095 /* NSString+REST_Encodings.m */; };
+		0A0E01BB169A35AB00DE0095 /* EncodingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E01B8169A35AB00DE0095 /* EncodingsTests.m */; };
+		0A0E01BC169A35AB00DE0095 /* InflectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E01BA169A35AB00DE0095 /* InflectionTests.m */; };
+		0A0E01BF169A35B400DE0095 /* ProjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E01BE169A35B400DE0095 /* ProjectTest.m */; };
+		0A0E01C4169A35BE00DE0095 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E01C1169A35BE00DE0095 /* Project.m */; };
+		0A0E01C5169A35BE00DE0095 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E01C3169A35BE00DE0095 /* Task.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A0E0120169A321F00DE0095 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A0E0100169A321F00DE0095 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A0E0108169A321F00DE0095;
+			remoteInfo = REST;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A0E0107169A321F00DE0095 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				0A0E0112169A321F00DE0095 /* REST.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A0E0109169A321F00DE0095 /* libREST.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libREST.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0E010C169A321F00DE0095 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0A0E0110169A321F00DE0095 /* REST-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "REST-Prefix.pch"; sourceTree = "<group>"; };
+		0A0E0111169A321F00DE0095 /* REST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REST.h; sourceTree = "<group>"; };
+		0A0E0113169A321F00DE0095 /* REST.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REST.m; sourceTree = "<group>"; };
+		0A0E011A169A321F00DE0095 /* RESTTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RESTTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0E011B169A321F00DE0095 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0A0E011D169A321F00DE0095 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0A0E0125169A321F00DE0095 /* RESTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RESTTests-Info.plist"; sourceTree = "<group>"; };
+		0A0E0127169A321F00DE0095 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A0E0129169A321F00DE0095 /* RESTTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESTTests.h; sourceTree = "<group>"; };
+		0A0E012A169A321F00DE0095 /* RESTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESTTests.m; sourceTree = "<group>"; };
+		0A0E01A7169A34F000DE0095 /* NSData+REST_Encodings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+REST_Encodings.h"; sourceTree = "<group>"; };
+		0A0E01A8169A34F000DE0095 /* NSData+REST_Encodings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+REST_Encodings.m"; sourceTree = "<group>"; };
+		0A0E01AA169A34F700DE0095 /* NSObject+REST_Serialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+REST_Serialization.h"; sourceTree = "<group>"; };
+		0A0E01AB169A34FE00DE0095 /* NSObject+REST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+REST.h"; sourceTree = "<group>"; };
+		0A0E01AC169A34FE00DE0095 /* NSObject+REST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+REST.m"; sourceTree = "<group>"; };
+		0A0E01AE169A350700DE0095 /* NSString+REST_Inflections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+REST_Inflections.h"; sourceTree = "<group>"; };
+		0A0E01AF169A350700DE0095 /* NSString+REST_Inflections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+REST_Inflections.m"; sourceTree = "<group>"; };
+		0A0E01B1169A351300DE0095 /* NSString+REST_Regex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+REST_Regex.h"; sourceTree = "<group>"; };
+		0A0E01B2169A351300DE0095 /* NSString+REST_Regex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+REST_Regex.m"; sourceTree = "<group>"; };
+		0A0E01B4169A352A00DE0095 /* NSString+REST_Encodings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+REST_Encodings.h"; sourceTree = "<group>"; };
+		0A0E01B5169A352A00DE0095 /* NSString+REST_Encodings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+REST_Encodings.m"; sourceTree = "<group>"; };
+		0A0E01B7169A35AB00DE0095 /* EncodingsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncodingsTests.h; sourceTree = "<group>"; };
+		0A0E01B8169A35AB00DE0095 /* EncodingsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncodingsTests.m; sourceTree = "<group>"; };
+		0A0E01B9169A35AB00DE0095 /* InflectionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InflectionTests.h; sourceTree = "<group>"; };
+		0A0E01BA169A35AB00DE0095 /* InflectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InflectionTests.m; sourceTree = "<group>"; };
+		0A0E01BD169A35B400DE0095 /* ProjectTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectTest.h; sourceTree = "<group>"; };
+		0A0E01BE169A35B400DE0095 /* ProjectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectTest.m; sourceTree = "<group>"; };
+		0A0E01C0169A35BE00DE0095 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		0A0E01C1169A35BE00DE0095 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		0A0E01C2169A35BE00DE0095 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		0A0E01C3169A35BE00DE0095 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A0E0106169A321F00DE0095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0E010D169A321F00DE0095 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0E0116169A321F00DE0095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0E011C169A321F00DE0095 /* SenTestingKit.framework in Frameworks */,
+				0A0E011E169A321F00DE0095 /* UIKit.framework in Frameworks */,
+				0A0E011F169A321F00DE0095 /* Foundation.framework in Frameworks */,
+				0A0E0122169A321F00DE0095 /* libREST.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A0E00FE169A321F00DE0095 = {
+			isa = PBXGroup;
+			children = (
+				0A0E010E169A321F00DE0095 /* REST */,
+				0A0E0123169A321F00DE0095 /* RESTTests */,
+				0A0E010B169A321F00DE0095 /* Frameworks */,
+				0A0E010A169A321F00DE0095 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A0E010A169A321F00DE0095 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A0E0109169A321F00DE0095 /* libREST.a */,
+				0A0E011A169A321F00DE0095 /* RESTTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A0E010B169A321F00DE0095 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A0E010C169A321F00DE0095 /* Foundation.framework */,
+				0A0E011B169A321F00DE0095 /* SenTestingKit.framework */,
+				0A0E011D169A321F00DE0095 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A0E010E169A321F00DE0095 /* REST */ = {
+			isa = PBXGroup;
+			children = (
+				0A0E0111169A321F00DE0095 /* REST.h */,
+				0A0E0113169A321F00DE0095 /* REST.m */,
+				0A0E01AB169A34FE00DE0095 /* NSObject+REST.h */,
+				0A0E01AC169A34FE00DE0095 /* NSObject+REST.m */,
+				0A0E01A1169A33B600DE0095 /* Encodings */,
+				0A0E01A3169A33BD00DE0095 /* Inflections */,
+				0A0E01A4169A33C900DE0095 /* Serialization */,
+				0A0E010F169A321F00DE0095 /* Supporting Files */,
+			);
+			path = REST;
+			sourceTree = "<group>";
+		};
+		0A0E010F169A321F00DE0095 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A0E0110169A321F00DE0095 /* REST-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A0E0123169A321F00DE0095 /* RESTTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A0E0129169A321F00DE0095 /* RESTTests.h */,
+				0A0E012A169A321F00DE0095 /* RESTTests.m */,
+				0A0E01A5169A33ED00DE0095 /* Tests */,
+				0A0E01A6169A33F500DE0095 /* Models */,
+				0A0E0124169A321F00DE0095 /* Supporting Files */,
+			);
+			path = RESTTests;
+			sourceTree = "<group>";
+		};
+		0A0E0124169A321F00DE0095 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A0E0125169A321F00DE0095 /* RESTTests-Info.plist */,
+				0A0E0126169A321F00DE0095 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A0E01A1169A33B600DE0095 /* Encodings */ = {
+			isa = PBXGroup;
+			children = (
+				0A0E01A7169A34F000DE0095 /* NSData+REST_Encodings.h */,
+				0A0E01A8169A34F000DE0095 /* NSData+REST_Encodings.m */,
+				0A0E01B4169A352A00DE0095 /* NSString+REST_Encodings.h */,
+				0A0E01B5169A352A00DE0095 /* NSString+REST_Encodings.m */,
+			);
+			name = Encodings;
+			sourceTree = "<group>";
+		};
+		0A0E01A3169A33BD00DE0095 /* Inflections */ = {
+			isa = PBXGroup;
+			children = (
+				0A0E01AE169A350700DE0095 /* NSString+REST_Inflections.h */,
+				0A0E01AF169A350700DE0095 /* NSString+REST_Inflections.m */,
+				0A0E01B1169A351300DE0095 /* NSString+REST_Regex.h */,
+				0A0E01B2169A351300DE0095 /* NSString+REST_Regex.m */,
+			);
+			name = Inflections;
+			sourceTree = "<group>";
+		};
+		0A0E01A4169A33C900DE0095 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				0A0E01AA169A34F700DE0095 /* NSObject+REST_Serialization.h */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		0A0E01A5169A33ED00DE0095 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0A0E01B7169A35AB00DE0095 /* EncodingsTests.h */,
+				0A0E01B8169A35AB00DE0095 /* EncodingsTests.m */,
+				0A0E01B9169A35AB00DE0095 /* InflectionTests.h */,
+				0A0E01BA169A35AB00DE0095 /* InflectionTests.m */,
+				0A0E01BD169A35B400DE0095 /* ProjectTest.h */,
+				0A0E01BE169A35B400DE0095 /* ProjectTest.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		0A0E01A6169A33F500DE0095 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A0E01C0169A35BE00DE0095 /* Project.h */,
+				0A0E01C1169A35BE00DE0095 /* Project.m */,
+				0A0E01C2169A35BE00DE0095 /* Task.h */,
+				0A0E01C3169A35BE00DE0095 /* Task.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A0E0108169A321F00DE0095 /* REST */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0E012E169A321F00DE0095 /* Build configuration list for PBXNativeTarget "REST" */;
+			buildPhases = (
+				0A0E0105169A321F00DE0095 /* Sources */,
+				0A0E0106169A321F00DE0095 /* Frameworks */,
+				0A0E0107169A321F00DE0095 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = REST;
+			productName = REST;
+			productReference = 0A0E0109169A321F00DE0095 /* libREST.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0A0E0119169A321F00DE0095 /* RESTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0E0131169A321F00DE0095 /* Build configuration list for PBXNativeTarget "RESTTests" */;
+			buildPhases = (
+				0A0E0115169A321F00DE0095 /* Sources */,
+				0A0E0116169A321F00DE0095 /* Frameworks */,
+				0A0E0117169A321F00DE0095 /* Resources */,
+				0A0E0118169A321F00DE0095 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A0E0121169A321F00DE0095 /* PBXTargetDependency */,
+			);
+			name = RESTTests;
+			productName = RESTTests;
+			productReference = 0A0E011A169A321F00DE0095 /* RESTTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A0E0100169A321F00DE0095 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Kevin Sylvestre";
+			};
+			buildConfigurationList = 0A0E0103169A321F00DE0095 /* Build configuration list for PBXProject "REST" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0A0E00FE169A321F00DE0095;
+			productRefGroup = 0A0E010A169A321F00DE0095 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A0E0108169A321F00DE0095 /* REST */,
+				0A0E0119169A321F00DE0095 /* RESTTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A0E0117169A321F00DE0095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0E0128169A321F00DE0095 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A0E0118169A321F00DE0095 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A0E0105169A321F00DE0095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0E0114169A321F00DE0095 /* REST.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A0E0115169A321F00DE0095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0E012B169A321F00DE0095 /* RESTTests.m in Sources */,
+				0A0E01A9169A34F000DE0095 /* NSData+REST_Encodings.m in Sources */,
+				0A0E01AD169A34FE00DE0095 /* NSObject+REST.m in Sources */,
+				0A0E01B0169A350700DE0095 /* NSString+REST_Inflections.m in Sources */,
+				0A0E01B3169A351300DE0095 /* NSString+REST_Regex.m in Sources */,
+				0A0E01B6169A352A00DE0095 /* NSString+REST_Encodings.m in Sources */,
+				0A0E01BB169A35AB00DE0095 /* EncodingsTests.m in Sources */,
+				0A0E01BC169A35AB00DE0095 /* InflectionTests.m in Sources */,
+				0A0E01BF169A35B400DE0095 /* ProjectTest.m in Sources */,
+				0A0E01C4169A35BE00DE0095 /* Project.m in Sources */,
+				0A0E01C5169A35BE00DE0095 /* Task.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A0E0121169A321F00DE0095 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A0E0108169A321F00DE0095 /* REST */;
+			targetProxy = 0A0E0120169A321F00DE0095 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A0E0126169A321F00DE0095 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A0E0127169A321F00DE0095 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A0E012C169A321F00DE0095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0A0E012D169A321F00DE0095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A0E012F169A321F00DE0095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/REST.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "REST/REST-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0A0E0130169A321F00DE0095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/REST.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "REST/REST-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0A0E0132169A321F00DE0095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "REST/REST-Prefix.pch";
+				INFOPLIST_FILE = "RESTTests/RESTTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0A0E0133169A321F00DE0095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "REST/REST-Prefix.pch";
+				INFOPLIST_FILE = "RESTTests/RESTTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A0E0103169A321F00DE0095 /* Build configuration list for PBXProject "REST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0E012C169A321F00DE0095 /* Debug */,
+				0A0E012D169A321F00DE0095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A0E012E169A321F00DE0095 /* Build configuration list for PBXNativeTarget "REST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0E012F169A321F00DE0095 /* Debug */,
+				0A0E0130169A321F00DE0095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A0E0131169A321F00DE0095 /* Build configuration list for PBXNativeTarget "RESTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0E0132169A321F00DE0095 /* Debug */,
+				0A0E0133169A321F00DE0095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A0E0100169A321F00DE0095 /* Project object */;
+}
