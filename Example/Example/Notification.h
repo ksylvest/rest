@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-#import "REST/REST.h"
+#import "REST.h"
 
 @class User;
 
