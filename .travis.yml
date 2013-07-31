@@ -1,1 +1,5 @@
 language: objective-c
+script: 
+  - "brew update"
+  - "brew install xctool"
+  - "xctool -project REST/REST.xcodeproj -sdk iphonesimulator -scheme 'REST' test"
