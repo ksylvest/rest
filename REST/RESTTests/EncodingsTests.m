@@ -8,7 +8,7 @@
 
 #import "EncodingsTests.h"
 
-#import "REST/NSString+REST_Encodings.h"
+#import "NSString+REST_Encodings.h"
 
 @implementation EncodingsTests
 

@@ -8,7 +8,7 @@
 
 #import "InflectionTests.h"
 
-#import "REST/NSString+REST_Inflections.h"
+#import "NSString+REST_Inflections.h"
 
 @implementation InflectionTests
 

@@ -8,7 +8,7 @@
 
 #import "ProjectTest.h"
 #import "Project.h"
-#import "REST/NSObject+REST.h"
+#import "NSObject+REST.h"
 
 @implementation ProjectTest
 

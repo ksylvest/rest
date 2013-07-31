@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A05AF6017A8DFA1005D3BEA /* NSObject+REST_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A05AF5F17A8DFA1005D3BEA /* NSObject+REST_Extensions.m */; };
+		0A05AF6417A8DFF8005D3BEA /* RESTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A05AF6317A8DFF8005D3BEA /* RESTScope.m */; };
 		0A0E010D169A321F00DE0095 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0E010C169A321F00DE0095 /* Foundation.framework */; };
 		0A0E0112169A321F00DE0095 /* REST.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A0E0111169A321F00DE0095 /* REST.h */; };
 		0A0E0114169A321F00DE0095 /* REST.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E0113169A321F00DE0095 /* REST.m */; };
@@ -52,6 +54,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A05AF5E17A8DFA1005D3BEA /* NSObject+REST_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+REST_Extensions.h"; sourceTree = "<group>"; };
+		0A05AF5F17A8DFA1005D3BEA /* NSObject+REST_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+REST_Extensions.m"; sourceTree = "<group>"; };
+		0A05AF6217A8DFF8005D3BEA /* RESTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTScope.h; sourceTree = "<group>"; };
+		0A05AF6317A8DFF8005D3BEA /* RESTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTScope.m; sourceTree = "<group>"; };
 		0A0E0109169A321F00DE0095 /* libREST.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libREST.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A0E010C169A321F00DE0095 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A0E0110169A321F00DE0095 /* REST-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "REST-Prefix.pch"; sourceTree = "<group>"; };
@@ -110,6 +116,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A05AF5D17A8DF73005D3BEA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A05AF5E17A8DFA1005D3BEA /* NSObject+REST_Extensions.h */,
+				0A05AF5F17A8DFA1005D3BEA /* NSObject+REST_Extensions.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		0A05AF6117A8DFEA005D3BEA /* Scopes */ = {
+			isa = PBXGroup;
+			children = (
+				0A05AF6217A8DFF8005D3BEA /* RESTScope.h */,
+				0A05AF6317A8DFF8005D3BEA /* RESTScope.m */,
+			);
+			name = Scopes;
+			sourceTree = "<group>";
+		};
 		0A0E00FE169A321F00DE0095 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +166,8 @@
 		0A0E010E169A321F00DE0095 /* REST */ = {
 			isa = PBXGroup;
 			children = (
+				0A05AF6117A8DFEA005D3BEA /* Scopes */,
+				0A05AF5D17A8DF73005D3BEA /* Extensions */,
 				0A0E0111169A321F00DE0095 /* REST.h */,
 				0A0E0113169A321F00DE0095 /* REST.m */,
 				0A0E01AB169A34FE00DE0095 /* NSObject+REST.h */,
@@ -336,6 +362,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0E0114169A321F00DE0095 /* REST.m in Sources */,
+				0A05AF6417A8DFF8005D3BEA /* RESTScope.m in Sources */,
+				0A05AF6017A8DFA1005D3BEA /* NSObject+REST_Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
