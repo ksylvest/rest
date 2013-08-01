@@ -11,8 +11,8 @@
 @interface RESTScope ()
 @property (nonatomic, strong) NSMutableArray *wheres;
 @property (nonatomic, strong) NSMutableArray *orders;
-@property (nonatomic, strong) NSNumber *limit;
-@property (nonatomic, strong) NSNumber *offset;
+@property (nonatomic, assign) NSInteger limit;
+@property (nonatomic, assign) NSInteger offset;
 @end
 
 @implementation RESTScope
@@ -114,13 +114,13 @@
     return self;
 }
 
-- (RESTScope *)limit:(NSNumber *)limit
+- (RESTScope *)limit:(NSInteger)limit
 {
     self.limit = limit;
     return self;
 }
 
-- (RESTScope *)offset:(NSNumber *)offset
+- (RESTScope *)offset:(NSInteger)offset
 {
     self.offset = offset;
     return self;

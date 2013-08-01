@@ -21,8 +21,8 @@
 
 - (RESTScope *)where:(id)parameters;
 - (RESTScope *)order:(id)parameters;
-- (RESTScope *)limit:(NSNumber *)limit;
-- (RESTScope *)offset:(NSNumber *)offset;
+- (RESTScope *)limit:(NSInteger)limit;
+- (RESTScope *)offset:(NSInteger)offset;
 
 - (id)find:(id)parameters;
 
