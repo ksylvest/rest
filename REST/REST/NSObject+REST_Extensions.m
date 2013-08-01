@@ -12,6 +12,10 @@
 
 @implementation NSObject (REST_Extensions)
 
+////////////////////////////////////////////////////////////////////////////////
+
+#pragma mark - Scoping
+
 - (RESTScope *)REST_scope
 {
     if ([self isKindOfClass:[RESTScope class]]) return (RESTScope *)self;
