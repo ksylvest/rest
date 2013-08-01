@@ -36,13 +36,13 @@
     return [scope find:parameters];
 }
 
-- (RESTScope *)REST_limit:(NSNumber *)limit
+- (RESTScope *)REST_limit:(NSInteger)limit
 {
     RESTScope *scope = [self REST_scope];
     return [scope limit:limit];
 }
 
-- (RESTScope *)REST_offset:(NSNumber *)offset
+- (RESTScope *)REST_offset:(NSInteger)offset
 {
     RESTScope *scope = [self REST_scope];
     return [scope offset:offset];
