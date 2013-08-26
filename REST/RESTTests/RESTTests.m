@@ -2,17 +2,23 @@
 //  RESTTests.m
 //  RESTTests
 //
-//  Created by Kevin Sylvestre on 7/31/13.
+//  Created by Kevin Sylvestre on 8/25/13.
 //  Copyright (c) 2013 Kevin Sylvestre. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
+
+#import "REST.h"
 
 @interface RESTTests : XCTestCase
 
 @end
 
 @implementation RESTTests
+
+////////////////////////////////////////////////////////////////////////////////
+
+#pragma mark - Setup
 
 - (void)setUp
 {
@@ -26,5 +32,16 @@
     [super tearDown];
 }
 
+////////////////////////////////////////////////////////////////////////////////
+
+#pragma mark - Tests
+
+- (void)testURLStructure
+{
+    [REST setScheme:@"https"];
+    [REST setHost:@"host"];
+    
+    XCTAssertNotNil([REST URLWithPath:@"/path"], @"https://host/path");
+}
 
 @end
