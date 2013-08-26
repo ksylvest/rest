@@ -2,7 +2,7 @@
 //  NSString+REST_Inflections.m
 //  REST
 //
-//  Created by Kevin Sylvestre on 6/26/12.
+//  Created by Kevin Sylvestre on 8/25/13.
 //  Copyright (c) 2013 Kevin Sylvestre. All rights reserved.
 //
 
@@ -16,7 +16,7 @@
 #pragma mark - Main
 
 - (NSString *)REST_pluralize
-{    
+{
     // Check common pluralizations ('oes', 'ies', 's').
     if ([self REST_matches:@"o$"]) return [self REST_replace:@"o$" with:@"oes"];
     if ([self REST_matches:@"y$"]) return [self REST_replace:@"y$" with:@"ies"];
@@ -27,7 +27,7 @@
 }
 
 - (NSString *)REST_singularize
-{    
+{
     // Check common singularizations ('o', 'y', '').
     if ([self REST_matches:@"oes$"]) return [self REST_replace:@"oes$" with:@"o"];
     if ([self REST_matches:@"ies$"])    return [self REST_replace:@"ies$" with:@"y"];
@@ -67,7 +67,7 @@
 }
 
 - (NSString *)REST_parameterize
-{    
+{
     // Create result.
     NSString *result = self;
     

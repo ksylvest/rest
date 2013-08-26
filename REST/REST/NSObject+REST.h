@@ -2,12 +2,14 @@
 //  NSObject+REST.h
 //  REST
 //
-//  Created by Kevin Sylvestre on 6/26/12.
+//  Created by Kevin Sylvestre on 7/31/13.
 //  Copyright (c) 2013 Kevin Sylvestre. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 typedef void (^RESTSucess)(id object);
-typedef void (^RESTFailure)(id result);
+typedef void (^RESTFailure)(NSError *error);
 
 @interface NSObject (REST)
 

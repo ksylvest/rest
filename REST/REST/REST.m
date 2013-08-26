@@ -2,7 +2,7 @@
 //  REST.m
 //  REST
 //
-//  Created by Kevin Sylvestre on 6/26/12.
+//  Created by Kevin Sylvestre on 8/25/13.
 //  Copyright (c) 2013 Kevin Sylvestre. All rights reserved.
 //
 
@@ -14,101 +14,102 @@
 
 #pragma mark - Configuration
 
-static NSString *_user     = nil;
-static NSString *_password = nil;
-static NSString *_scheme   = nil;
 static NSString *_host     = nil;
+static NSString *_port     = nil;
+static NSString *_scheme   = nil;
 static NSString *_format   = nil;
+static NSString *_username = nil;
+static NSString *_password = nil;
 
-+ (NSURL *)getURL
++ (NSURL *)URL
 {
-	return [self getURLWithPath:@"/"];
+    return [self URLWithPath:@"/"];
 }
 
-+ (NSURL *)getURLWithPath:(NSString *)path
++ (NSURL *)URLWithPath:(NSString *)path
 {
     // Create URL using provided paramteres.
-	return [[NSURL alloc] initWithScheme:[self getScheme] host:[self getHost] path:path];
+    return [[NSURL alloc] initWithScheme:[self scheme] host:[self host] path:path];
 }
 
-+ (void)setUser:(NSString *)user
++ (void)setUsername:(NSString *)username
 {
-	// If not identical.
-	if (_user != user)
-	{
-		// Release and copy.
-		_user = [user copy];
-	}
+    // If not identical.
+    if (_username != username)
+    {
+        // Release and copy.
+        _username = [username copy];
+    }
 }
 
-+ (NSString *)getUser
++ (NSString *)username
 {
-	// Reference.
-	return _user;
+    // Reference.
+    return _username;
 }
 
 + (void)setPassword:(NSString *)password
 {
-	// If not identical.
-	if (_password != password)
-	{
-		// Release and copy.
-		_password = [password copy];
-	}
+    // If not identical.
+    if (_password != password)
+    {
+        // Release and copy.
+        _password = [password copy];
+    }
 }
 
-+ (NSString *)getPassword
++ (NSString *)password
 {
-	// Reference.
-	return _password;
+    // Reference.
+    return _password;
 }
 
 + (void)setScheme:(NSString *)scheme
 {
-	// If not identical.
-	if (_scheme != scheme)
-	{
-		// Release and copy.
-		_scheme = [scheme copy];
-	}
+    // If not identical.
+    if (_scheme != scheme)
+    {
+        // Release and copy.
+        _scheme = [scheme copy];
+    }
 }
 
-+ (NSString *)getScheme
++ (NSString *)scheme
 {
-	// Reference.
-	return _scheme;
+    // Reference.
+    return _scheme;
 }
 
 + (void)setHost:(NSString *)host
 {
-	// If not identical.
-	if (_host != host)
-	{ 
-		// Release and copy.
-		_host = [host copy];
-	}
+    // If not identical.
+    if (_host != host)
+    {
+        // Release and copy.
+        _host = [host copy];
+    }
 }
 
-+ (NSString *)getHost
++ (NSString *)host
 {
-	// Reference.
-	return _host;
+    // Reference.
+    return _host;
 }
 
 + (void)setFormat:(NSString *)format
 {
-	// If not identical.
-	if (_format != format)
-	{ 
-		// Release and copy.
-		_format = [format copy];
-	}
+    // If not identical.
+    if (_format != format)
+    {
+        // Release and copy.
+        _format = [format copy];
+    }
 }
 
-+ (NSString *)getFormat
++ (NSString *)format
 {
-	// Reference.
-	return _format;
+    // Reference.
+    return _format;
 }
 
 @end

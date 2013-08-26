@@ -1,14 +1,16 @@
 //
-//  NSData+RESTEncodings.h
+//  NSData+REST_Encodings.h
 //  REST
 //
-//  Created by Kevin Sylvestre on 6/26/12.
+//  Created by Kevin Sylvestre on 8/25/13.
 //  Copyright (c) 2013 Kevin Sylvestre. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 @interface NSData (REST_Encodings)
 
-@property (nonatomic, readonly) NSData *REST_base64encode;
-@property (nonatomic, readonly) NSData *REST_base64decode;
+- (NSData *)REST_base64encode;
+- (NSData *)REST_base64decode;
 
 @end
