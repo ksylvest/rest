@@ -16,17 +16,17 @@
 #pragma mark - Encodings
 
 - (NSString *)REST_base64encode
-{	
-	NSData *data = [[self dataUsingEncoding:NSUTF8StringEncoding] REST_base64encode];
-	
-	return [[NSString alloc] initWithBytes:[data bytes] length:[data length] encoding:NSASCIIStringEncoding];
+{
+    NSData *data = [[self dataUsingEncoding:NSUTF8StringEncoding] REST_base64encode];
+    
+    return [[NSString alloc] initWithBytes:[data bytes] length:[data length] encoding:NSASCIIStringEncoding];
 }
 
 - (NSString *)REST_base64decode
-{	
-	NSData *data = [[self dataUsingEncoding:NSASCIIStringEncoding] REST_base64decode];
-	
-	return [[NSString alloc] initWithBytes:[data bytes] length:[data length] encoding:NSUTF8StringEncoding];
+{
+    NSData *data = [[self dataUsingEncoding:NSASCIIStringEncoding] REST_base64decode];
+    
+    return [[NSString alloc] initWithBytes:[data bytes] length:[data length] encoding:NSUTF8StringEncoding];
 }
 
 @end
