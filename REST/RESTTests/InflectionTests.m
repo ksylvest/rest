@@ -2,32 +2,48 @@
 //  InflectionTests.m
 //  REST
 //
-//  Created by Kevin Sylvestre on 6/26/12.
+//  Created by Kevin Sylvestre on 7/31/13.
 //  Copyright (c) 2013 Kevin Sylvestre. All rights reserved.
 //
 
-#import "InflectionTests.h"
+#import <XCTest/XCTest.h>
 
-#import "NSString+REST_Inflections.h"
+#import "REST.h"
+
+@interface InflectionTests : XCTestCase
+
+@end
 
 @implementation InflectionTests
 
+////////////////////////////////////////////////////////////////////////////////
+
+#pragma mark - Configuration
+
+- (void)setUp
+{
+    [super setUp];
+    // Put setup code here; it will be run once, before the first test case.
+}
+
+- (void)tearDown
+{
+    // Put teardown code here; it will be run once, after the last test case.
+    [super tearDown];
+}
 
 ////////////////////////////////////////////////////////////////////////////////
 
-#pragma mark -
-#pragma mark Tests
-#pragma mark -
-
+#pragma mark - Tests
 
 - (void)testPluralize
 {
 	// Create test cases.
 	NSDictionary *tests = [NSDictionary dictionaryWithObjectsAndKeys:
-						   @"users"    , @"user"    , 
+						   @"users"    , @"user"    ,
 						   @"accounts" , @"account" ,
-						   @"cherries" , @"cherry"  , 
-						   @"potatoes" , @"potato"  , 
+						   @"cherries" , @"cherry"  ,
+						   @"potatoes" , @"potato"  ,
 						   nil];
 	
 	// Iterate through cases.
@@ -38,10 +54,9 @@
 		NSString *actual = [test REST_pluralize];
 		
 		// Perform assertion on actual and expected results matching.
-		STAssertEqualObjects(actual, expected, @"'%@' pluralizes to '%@' instead of '%@'.", test, actual, expected);
+		XCTAssertEqualObjects(actual, expected, @"'%@' pluralizes to '%@' instead of '%@'.", test, actual, expected);
 	}
 }
-
 
 - (void)testSingularize
 {
@@ -61,10 +76,9 @@
 		NSString *actual = [test REST_singularize];
 		
 		// Perform assertion on actual and expected results matching.
-		STAssertEqualObjects(actual, expected, @"'%@' singularizes to '%@' instead of '%@'.", test, actual, expected);
+		XCTAssertEqualObjects(actual, expected, @"'%@' singularizes to '%@' instead of '%@'.", test, actual, expected);
 	}
 }
-
 
 - (void)testParameterize;
 {
@@ -84,9 +98,8 @@
 		NSString *actual = [test REST_parameterize];
 		
 		// Perform assertion on actual and expected results matching.
-		STAssertEqualObjects(actual, expected, @"'%@' parameterizes to '%@' instead of '%@'.", test, actual, expected);
+		XCTAssertEqualObjects(actual, expected, @"'%@' parameterizes to '%@' instead of '%@'.", test, actual, expected);
 	}
 }
-
 
 @end
