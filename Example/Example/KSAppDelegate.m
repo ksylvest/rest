@@ -2,13 +2,16 @@
 //  KSAppDelegate.m
 //  Example
 //
-//  Created by Kevin Sylvestre on 1/6/13.
+//  Created by Kevin Sylvestre on 8/25/13.
 //  Copyright (c) 2013 Kevin Sylvestre. All rights reserved.
 //
 
 #import "KSAppDelegate.h"
 
 #import "KSMasterViewController.h"
+
+#import "KSGlobals.h"
+#import "KSHelper.h"
 
 @implementation KSAppDelegate
 
@@ -18,8 +21,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSString *name = [NSString stringWithFormat:@"Auth_%@", [KSHelper device]];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:name bundle:nil];
+    UIViewController *initialViewController = [storyboard instantiateInitialViewController];
+    
+    [self.window setRootViewController:initialViewController];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
+							
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {

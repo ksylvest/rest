@@ -2,31 +2,33 @@
 //  ExampleTests.m
 //  ExampleTests
 //
-//  Created by Kevin Sylvestre on 1/6/13.
+//  Created by Kevin Sylvestre on 8/25/13.
 //  Copyright (c) 2013 Kevin Sylvestre. All rights reserved.
 //
 
-#import "ExampleTests.h"
+#import <XCTest/XCTest.h>
+
+@interface ExampleTests : XCTestCase
+
+@end
 
 @implementation ExampleTests
 
 - (void)setUp
 {
     [super setUp];
-    
-    // Set-up code here.
+    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown
 {
-    // Tear-down code here.
-    
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in ExampleTests");
+    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
 @end
