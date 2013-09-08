@@ -19,18 +19,9 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    NSString *name = [NSString stringWithFormat:@"Auth"];
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:name bundle:nil];
-    UIViewController *initialViewController = [storyboard instantiateInitialViewController];
-    
-    [self.window setRootViewController:initialViewController];
-    [self.window makeKeyAndVisible];
-    
-    return YES;
-}
-							
+////////////////////////////////////////////////////////////////////////////////
+
+#pragma mark - Lifecycle
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {

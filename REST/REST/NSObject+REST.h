@@ -8,28 +8,28 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^RESTSucess)(id object);
+typedef void (^RESTSuccess)(id object);
 typedef void (^RESTFailure)(NSError *error);
 
 @interface NSObject (REST)
 
 - (NSDictionary *)REST_properties;
 
-+ (void)REST_readRemote;
-+ (void)REST_readRemoteWithIdentifier:(NSNumber *)identifier success:(RESTSucess)success failure:(RESTFailure)failure;
-+ (void)REST_readRemoteWithPath:(NSString *)path success:(RESTSucess)success failure:(RESTFailure)failure;
-+ (void)REST_readRemoteWithURL:(NSURL *)url success:(RESTSucess)success failure:(RESTFailure)failure;
++ (void)REST_find;
++ (void)REST_findWithIdentifier:(NSNumber *)identifier success:(RESTSuccess)success failure:(RESTFailure)failure;
++ (void)REST_findWithPath:(NSString *)path success:(RESTSuccess)success failure:(RESTFailure)failure;
++ (void)REST_findWithURL:(NSURL *)url success:(RESTSuccess)success failure:(RESTFailure)failure;
 
-- (void)REST_createRemote;
-- (void)REST_createRemoteWithPath:(NSString *)path success:(RESTSucess)success failure:(RESTFailure)failure;
-- (void)REST_createRemoteWithURL:(NSURL *)url success:(RESTSucess)success failure:(RESTFailure)failure;
++ (void)REST_create:(NSDictionary *)parameters success:(RESTSuccess)success failure:(RESTFailure)failure;
++ (void)REST_create:(NSDictionary *)parameters path:(NSString *)path success:(RESTSuccess)success failure:(RESTFailure)failure;
++ (void)REST_create:(NSDictionary *)parameters url:(NSURL *)url success:(RESTSuccess)success failure:(RESTFailure)failure;
 
-- (void)REST_updateRemote;
-- (void)REST_updateRemoteWithPath:(NSString *)path success:(RESTSucess)success failure:(RESTFailure)failure;
-- (void)REST_updateRemoteWithURL:(NSURL *)url success:(RESTSucess)success failure:(RESTFailure)failure;
+- (void)REST_update:(NSDictionary *)parameters success:(RESTSuccess)success failure:(RESTFailure)failure;
+- (void)REST_update:(NSDictionary *)parameters path:(NSString *)path success:(RESTSuccess)success failure:(RESTFailure)failure;
+- (void)REST_update:(NSDictionary *)parameters url:(NSURL *)url success:(RESTSuccess)success failure:(RESTFailure)failure;
 
-- (void)REST_deleteRemote;
-- (void)REST_deleteRemoteWithPath:(NSString *)path success:(RESTSucess)success failure:(RESTFailure)failure;
-- (void)REST_deleteRemoteWithURL:(NSURL *)url success:(RESTSucess)success failure:(RESTFailure)failure;
+- (void)REST_delete;
+- (void)REST_deleteWithPath:(NSString *)path success:(RESTSuccess)success failure:(RESTFailure)failure;
+- (void)REST_deleteWithURL:(NSURL *)url success:(RESTSuccess)success failure:(RESTFailure)failure;
 
 @end

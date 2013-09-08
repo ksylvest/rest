@@ -8,9 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KSDetailViewController : UIViewController <UISplitViewControllerDelegate>
-
-@property (strong, nonatomic) id detailItem;
-
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@interface KSDetailViewController : UIViewController
 @end

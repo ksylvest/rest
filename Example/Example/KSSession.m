@@ -7,6 +7,13 @@
 //
 
 #import "KSSession.h"
+#import "KSUser.h"
 
 @implementation KSSession
+
+- (KSUser *)user
+{
+    return nil;
+}
+
 @end

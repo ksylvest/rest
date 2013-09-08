@@ -9,8 +9,8 @@
 #import "KSAuthenticationViewController.h"
 
 typedef enum KSAuthenticationViewControllerMode {
-    KSAuthenticationViewControllerModeSignup = 0,
-    KSAuthenticationViewControllerModeLogin  = 1,
+    KSAuthenticationViewControllerModeSignup,
+    KSAuthenticationViewControllerModeLogin,
 } KSAuthenticationViewControllerMode;
 
 @interface KSAuthenticationViewController ()

@@ -8,6 +8,12 @@
 
 #import "KSSignupViewController.h"
 
+#import "KSUser.h"
+#import "KSSession.h"
+#import "KSApplication.h"
+
+#import <REST/REST.h>
+
 @interface KSSignupViewController ()
 
 @property (nonatomic, weak) IBOutlet UITextField *nameTextField;
@@ -24,7 +30,26 @@
 
 - (IBAction)submitButtonSelector:(id)sender
 {
+    NSString *name = self.nameTextField.text;
+    NSString *email = self.emailTextField.text;
+    NSString *password = self.passwordTextField.text;
     
+    NSDictionary *parameters = @{ @"name": name, @"email": email, @"password": password };
+    
+    RESTSuccess success = ^(NSDictionary *response) {
+        KSSession *session = [[KSSession alloc] init];
+        [KSApplication authenticate:session];
+    };
+    
+    RESTFailure failure = ^(NSError *error) {
+        NSString *title = @"Error";
+        NSString *message = @"Something went wrong. Please try again.";
+        NSString *cancel = @"Dismiss";
+        [[[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:cancel otherButtonTitles:nil] show];
+    };
+    
+    [KSUser REST_create:parameters success:success failure:failure];
+
 }
 
 @end

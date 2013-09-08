@@ -8,15 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@class KSDetailViewController;
-
-#import <CoreData/CoreData.h>
-
-@interface KSMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
-
-@property (strong, nonatomic) KSDetailViewController *detailViewController;
-
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-
+@interface KSMasterViewController : UITableViewController
 @end

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "NSObject+REST.h"
+
 @interface REST : NSObject
 
 + (NSURL *)URL;

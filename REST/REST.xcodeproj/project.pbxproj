@@ -25,6 +25,7 @@
 		0AA17AB517DC20E700EA7916 /* RESTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA17AAE17DC20E700EA7916 /* RESTScope.m */; };
 		0AA17AB817DC20FC00EA7916 /* REST_EncodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA17AB617DC20FC00EA7916 /* REST_EncodingTests.m */; };
 		0AA17AB917DC20FC00EA7916 /* REST_InflectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA17AB717DC20FC00EA7916 /* REST_InflectionTests.m */; };
+		0AA4767517DC2C0D00B036C1 /* NSObject+REST.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AA17AA517DC20E700EA7916 /* NSObject+REST.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				0AA4767517DC2C0D00B036C1 /* NSObject+REST.h in CopyFiles */,
 				0A29F21A17DC1CC00069BAE0 /* REST.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +424,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -444,6 +447,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;

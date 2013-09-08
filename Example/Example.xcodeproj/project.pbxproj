@@ -38,6 +38,10 @@
 		0A29F26717DC1DF00069BAE0 /* KSTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F25917DC1DF00069BAE0 /* KSTask.m */; };
 		0A29F26817DC1DF00069BAE0 /* KSTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F25B17DC1DF00069BAE0 /* KSTasksViewController.m */; };
 		0A29F26917DC1DF00069BAE0 /* KSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F25D17DC1DF00069BAE0 /* KSUser.m */; };
+		0AA17ABB17DC21CB00EA7916 /* libREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA17ABA17DC21CB00EA7916 /* libREST.a */; };
+		0AA4767C17DC2EA400B036C1 /* KSApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4767B17DC2EA400B036C1 /* KSApplication.m */; };
+		0AA4768817DC331E00B036C1 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA4768617DC331E00B036C1 /* Root.storyboard */; };
+		0AA4768E17DC336800B036C1 /* KSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4768D17DC336800B036C1 /* KSRootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +103,12 @@
 		0A29F25B17DC1DF00069BAE0 /* KSTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTasksViewController.m; sourceTree = "<group>"; };
 		0A29F25C17DC1DF00069BAE0 /* KSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSUser.h; sourceTree = "<group>"; };
 		0A29F25D17DC1DF00069BAE0 /* KSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSUser.m; sourceTree = "<group>"; };
+		0AA17ABA17DC21CB00EA7916 /* libREST.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libREST.a; path = "../REST/build/Debug-iphoneos/libREST.a"; sourceTree = "<group>"; };
+		0AA4767A17DC2EA400B036C1 /* KSApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSApplication.h; sourceTree = "<group>"; };
+		0AA4767B17DC2EA400B036C1 /* KSApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSApplication.m; sourceTree = "<group>"; };
+		0AA4768717DC331E00B036C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Root.storyboard; sourceTree = "<group>"; };
+		0AA4768C17DC336800B036C1 /* KSRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSRootViewController.h; sourceTree = "<group>"; };
+		0AA4768D17DC336800B036C1 /* KSRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSRootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA17ABB17DC21CB00EA7916 /* libREST.a in Frameworks */,
 				0A29F1CA17DC1C9F0069BAE0 /* CoreGraphics.framework in Frameworks */,
 				0A29F1CE17DC1C9F0069BAE0 /* CoreData.framework in Frameworks */,
 				0A29F1CC17DC1C9F0069BAE0 /* UIKit.framework in Frameworks */,
@@ -149,6 +160,7 @@
 		0A29F1C617DC1C9F0069BAE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0AA17ABA17DC21CB00EA7916 /* libREST.a */,
 				0A29F1C717DC1C9F0069BAE0 /* Foundation.framework */,
 				0A29F1C917DC1C9F0069BAE0 /* CoreGraphics.framework */,
 				0A29F1CB17DC1C9F0069BAE0 /* UIKit.framework */,
@@ -223,20 +235,9 @@
 		0A86A46417DC1E9B00610522 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0A29F24617DC1DF00069BAE0 /* KSAuthenticationViewController.h */,
-				0A29F24717DC1DF00069BAE0 /* KSAuthenticationViewController.m */,
-				0A29F24C17DC1DF00069BAE0 /* KSLoginViewController.h */,
-				0A29F24D17DC1DF00069BAE0 /* KSLoginViewController.m */,
-				0A29F25217DC1DF00069BAE0 /* KSProjectsViewController.h */,
-				0A29F25317DC1DF00069BAE0 /* KSProjectsViewController.m */,
-				0A29F25617DC1DF00069BAE0 /* KSSignupViewController.h */,
-				0A29F25717DC1DF00069BAE0 /* KSSignupViewController.m */,
-				0A29F25A17DC1DF00069BAE0 /* KSTasksViewController.h */,
-				0A29F25B17DC1DF00069BAE0 /* KSTasksViewController.m */,
-				0A29F1E417DC1C9F0069BAE0 /* KSMasterViewController.h */,
-				0A29F1E517DC1C9F0069BAE0 /* KSMasterViewController.m */,
-				0A29F1E717DC1C9F0069BAE0 /* KSDetailViewController.h */,
-				0A29F1E817DC1C9F0069BAE0 /* KSDetailViewController.m */,
+				0AA4768917DC333600B036C1 /* Root */,
+				0AA4768B17DC335100B036C1 /* Auth */,
+				0AA4768A17DC334600B036C1 /* Main */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -264,6 +265,8 @@
 			children = (
 				0A29F24817DC1DF00069BAE0 /* KSGlobals.h */,
 				0A29F24917DC1DF00069BAE0 /* KSGlobals.m */,
+				0AA4767A17DC2EA400B036C1 /* KSApplication.h */,
+				0AA4767B17DC2EA400B036C1 /* KSApplication.m */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
@@ -272,9 +275,47 @@
 			isa = PBXGroup;
 			children = (
 				0A29F1DB17DC1C9F0069BAE0 /* Main.storyboard */,
+				0AA4768617DC331E00B036C1 /* Root.storyboard */,
 				0A29F24317DC1D7E0069BAE0 /* Auth.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		0AA4768917DC333600B036C1 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				0AA4768C17DC336800B036C1 /* KSRootViewController.h */,
+				0AA4768D17DC336800B036C1 /* KSRootViewController.m */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		0AA4768A17DC334600B036C1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0A29F25217DC1DF00069BAE0 /* KSProjectsViewController.h */,
+				0A29F25317DC1DF00069BAE0 /* KSProjectsViewController.m */,
+				0A29F25A17DC1DF00069BAE0 /* KSTasksViewController.h */,
+				0A29F25B17DC1DF00069BAE0 /* KSTasksViewController.m */,
+				0A29F1E417DC1C9F0069BAE0 /* KSMasterViewController.h */,
+				0A29F1E517DC1C9F0069BAE0 /* KSMasterViewController.m */,
+				0A29F1E717DC1C9F0069BAE0 /* KSDetailViewController.h */,
+				0A29F1E817DC1C9F0069BAE0 /* KSDetailViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		0AA4768B17DC335100B036C1 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0A29F24617DC1DF00069BAE0 /* KSAuthenticationViewController.h */,
+				0A29F24717DC1DF00069BAE0 /* KSAuthenticationViewController.m */,
+				0A29F24C17DC1DF00069BAE0 /* KSLoginViewController.h */,
+				0A29F24D17DC1DF00069BAE0 /* KSLoginViewController.m */,
+				0A29F25617DC1DF00069BAE0 /* KSSignupViewController.h */,
+				0A29F25717DC1DF00069BAE0 /* KSSignupViewController.m */,
+			);
+			name = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA4768817DC331E00B036C1 /* Root.storyboard in Resources */,
 				0A29F24517DC1D7E0069BAE0 /* Auth.storyboard in Resources */,
 				0A29F1EB17DC1C9F0069BAE0 /* Images.xcassets in Resources */,
 				0A29F1DD17DC1C9F0069BAE0 /* Main.storyboard in Resources */,
@@ -386,12 +428,14 @@
 				0A29F26317DC1DF00069BAE0 /* KSProject.m in Sources */,
 				0A29F26717DC1DF00069BAE0 /* KSTask.m in Sources */,
 				0A29F25F17DC1DF00069BAE0 /* KSGlobals.m in Sources */,
+				0AA4767C17DC2EA400B036C1 /* KSApplication.m in Sources */,
 				0A29F26417DC1DF00069BAE0 /* KSProjectsViewController.m in Sources */,
 				0A29F1D617DC1C9F0069BAE0 /* main.m in Sources */,
 				0A29F26917DC1DF00069BAE0 /* KSUser.m in Sources */,
 				0A29F26617DC1DF00069BAE0 /* KSSignupViewController.m in Sources */,
 				0A29F26517DC1DF00069BAE0 /* KSSession.m in Sources */,
 				0A29F26217DC1DF00069BAE0 /* KSNotification.m in Sources */,
+				0AA4768E17DC336800B036C1 /* KSRootViewController.m in Sources */,
 				0A29F1E917DC1C9F0069BAE0 /* KSDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +489,14 @@
 				0A29F24417DC1D7E0069BAE0 /* Base */,
 			);
 			name = Auth.storyboard;
+			sourceTree = "<group>";
+		};
+		0AA4768617DC331E00B036C1 /* Root.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AA4768717DC331E00B036C1 /* Base */,
+			);
+			name = Root.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -528,6 +580,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = "Example/Example-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -541,6 +594,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = "Example/Example-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

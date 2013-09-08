@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class KSUser;
+
 @interface KSSession : NSObject
 
 @property (nonatomic, strong) NSString *email;
 @property (nonatomic, strong) NSString *password;
+
+@property (nonatomic, readonly) KSUser *user;
 
 @end
