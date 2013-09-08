@@ -7,181 +7,138 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A163EB817CB0BF4005F2644 /* RESTScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A163EB717CB0BF4005F2644 /* RESTScope.m */; };
-		0ADA289517CAFDD600FC2A70 /* NSObject+REST_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA289417CAFDD600FC2A70 /* NSObject+REST_Extensions.m */; };
-		0ADCC0CA17CAEAEE00CCFADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADCC0C917CAEAEE00CCFADE /* Foundation.framework */; };
-		0ADCC0CF17CAEAEE00CCFADE /* REST.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0ADCC0CE17CAEAEE00CCFADE /* REST.h */; };
-		0ADCC0D117CAEAEE00CCFADE /* REST.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC0D017CAEAEE00CCFADE /* REST.m */; };
-		0ADCC0D817CAEAEF00CCFADE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADCC0D717CAEAEF00CCFADE /* XCTest.framework */; };
-		0ADCC0D917CAEAEF00CCFADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADCC0C917CAEAEE00CCFADE /* Foundation.framework */; };
-		0ADCC0DB17CAEAEF00CCFADE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADCC0DA17CAEAEF00CCFADE /* UIKit.framework */; };
-		0ADCC0DE17CAEAEF00CCFADE /* libREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADCC0C617CAEAEE00CCFADE /* libREST.a */; };
-		0ADCC0E417CAEAEF00CCFADE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0ADCC0E217CAEAEF00CCFADE /* InfoPlist.strings */; };
-		0ADCC0E617CAEAEF00CCFADE /* RESTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC0E517CAEAEF00CCFADE /* RESTTests.m */; };
-		0ADCC0F317CAED6600CCFADE /* NSData+REST_Encodings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC0F217CAED6600CCFADE /* NSData+REST_Encodings.m */; };
-		0ADCC0F717CAEE2600CCFADE /* REST_EncodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC0F617CAEE2600CCFADE /* REST_EncodingTests.m */; };
-		0ADCC0FA17CAEE9300CCFADE /* NSString+REST_Encodings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC0F917CAEE9300CCFADE /* NSString+REST_Encodings.m */; };
-		0ADCC0FF17CAEF4D00CCFADE /* NSString+REST_Inflections.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC0FE17CAEF4D00CCFADE /* NSString+REST_Inflections.m */; };
-		0ADCC10217CAEF8600CCFADE /* NSString+REST_Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC10117CAEF8600CCFADE /* NSString+REST_Regex.m */; };
-		0ADCC10517CAEFE900CCFADE /* NSObject+REST.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC10417CAEFE900CCFADE /* NSObject+REST.m */; };
-		0ADCC10817CAF13300CCFADE /* REST_InflectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCC10717CAF13300CCFADE /* REST_InflectionTests.m */; };
+		0A29F21517DC1CC00069BAE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A29F21417DC1CC00069BAE0 /* Foundation.framework */; };
+		0A29F21A17DC1CC00069BAE0 /* REST.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A29F21917DC1CC00069BAE0 /* REST.h */; };
+		0A29F21C17DC1CC00069BAE0 /* REST.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F21B17DC1CC00069BAE0 /* REST.m */; };
+		0A29F22317DC1CC00069BAE0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A29F22217DC1CC00069BAE0 /* XCTest.framework */; };
+		0A29F22417DC1CC00069BAE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A29F21417DC1CC00069BAE0 /* Foundation.framework */; };
+		0A29F22617DC1CC00069BAE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A29F22517DC1CC00069BAE0 /* UIKit.framework */; };
+		0A29F22917DC1CC00069BAE0 /* libREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A29F21117DC1CC00069BAE0 /* libREST.a */; };
+		0A29F22F17DC1CC00069BAE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A29F22D17DC1CC00069BAE0 /* InfoPlist.strings */; };
+		0A29F23117DC1CC00069BAE0 /* RESTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F23017DC1CC00069BAE0 /* RESTTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0ADCC0DC17CAEAEF00CCFADE /* PBXContainerItemProxy */ = {
+		0A29F22717DC1CC00069BAE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0ADCC0BE17CAEAEE00CCFADE /* Project object */;
+			containerPortal = 0A29F20917DC1CC00069BAE0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0ADCC0C517CAEAEE00CCFADE;
+			remoteGlobalIDString = 0A29F21017DC1CC00069BAE0;
 			remoteInfo = REST;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0ADCC0C417CAEAEE00CCFADE /* CopyFiles */ = {
+		0A29F20F17DC1CC00069BAE0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				0ADCC0CF17CAEAEE00CCFADE /* REST.h in CopyFiles */,
+				0A29F21A17DC1CC00069BAE0 /* REST.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A163EB617CB0BF4005F2644 /* RESTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTScope.h; sourceTree = "<group>"; };
-		0A163EB717CB0BF4005F2644 /* RESTScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTScope.m; sourceTree = "<group>"; };
-		0ADA289317CAFDD600FC2A70 /* NSObject+REST_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+REST_Extensions.h"; sourceTree = "<group>"; };
-		0ADA289417CAFDD600FC2A70 /* NSObject+REST_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+REST_Extensions.m"; sourceTree = "<group>"; };
-		0ADA289617CAFDF100FC2A70 /* NSObject+REST_Serialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+REST_Serialization.h"; sourceTree = "<group>"; };
-		0ADCC0C617CAEAEE00CCFADE /* libREST.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libREST.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ADCC0C917CAEAEE00CCFADE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		0ADCC0CD17CAEAEE00CCFADE /* REST-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "REST-Prefix.pch"; sourceTree = "<group>"; };
-		0ADCC0CE17CAEAEE00CCFADE /* REST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REST.h; sourceTree = "<group>"; };
-		0ADCC0D017CAEAEE00CCFADE /* REST.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REST.m; sourceTree = "<group>"; };
-		0ADCC0D617CAEAEF00CCFADE /* RESTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RESTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ADCC0D717CAEAEF00CCFADE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		0ADCC0DA17CAEAEF00CCFADE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		0ADCC0E117CAEAEF00CCFADE /* RESTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RESTTests-Info.plist"; sourceTree = "<group>"; };
-		0ADCC0E317CAEAEF00CCFADE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0ADCC0E517CAEAEF00CCFADE /* RESTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESTTests.m; sourceTree = "<group>"; };
-		0ADCC0F117CAED6600CCFADE /* NSData+REST_Encodings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+REST_Encodings.h"; sourceTree = "<group>"; };
-		0ADCC0F217CAED6600CCFADE /* NSData+REST_Encodings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+REST_Encodings.m"; sourceTree = "<group>"; };
-		0ADCC0F617CAEE2600CCFADE /* REST_EncodingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REST_EncodingTests.m; sourceTree = "<group>"; };
-		0ADCC0F817CAEE9300CCFADE /* NSString+REST_Encodings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+REST_Encodings.h"; sourceTree = "<group>"; };
-		0ADCC0F917CAEE9300CCFADE /* NSString+REST_Encodings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+REST_Encodings.m"; sourceTree = "<group>"; };
-		0ADCC0FD17CAEF4D00CCFADE /* NSString+REST_Inflections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+REST_Inflections.h"; sourceTree = "<group>"; };
-		0ADCC0FE17CAEF4D00CCFADE /* NSString+REST_Inflections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+REST_Inflections.m"; sourceTree = "<group>"; };
-		0ADCC10017CAEF8600CCFADE /* NSString+REST_Regex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+REST_Regex.h"; sourceTree = "<group>"; };
-		0ADCC10117CAEF8600CCFADE /* NSString+REST_Regex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+REST_Regex.m"; sourceTree = "<group>"; };
-		0ADCC10317CAEFE900CCFADE /* NSObject+REST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+REST.h"; sourceTree = "<group>"; };
-		0ADCC10417CAEFE900CCFADE /* NSObject+REST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+REST.m"; sourceTree = "<group>"; };
-		0ADCC10717CAF13300CCFADE /* REST_InflectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REST_InflectionTests.m; sourceTree = "<group>"; };
+		0A29F21117DC1CC00069BAE0 /* libREST.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libREST.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A29F21417DC1CC00069BAE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0A29F21817DC1CC00069BAE0 /* REST-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "REST-Prefix.pch"; sourceTree = "<group>"; };
+		0A29F21917DC1CC00069BAE0 /* REST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REST.h; sourceTree = "<group>"; };
+		0A29F21B17DC1CC00069BAE0 /* REST.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REST.m; sourceTree = "<group>"; };
+		0A29F22117DC1CC00069BAE0 /* RESTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RESTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A29F22217DC1CC00069BAE0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0A29F22517DC1CC00069BAE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0A29F22C17DC1CC00069BAE0 /* RESTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RESTTests-Info.plist"; sourceTree = "<group>"; };
+		0A29F22E17DC1CC00069BAE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A29F23017DC1CC00069BAE0 /* RESTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESTTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0ADCC0C317CAEAEE00CCFADE /* Frameworks */ = {
+		0A29F20E17DC1CC00069BAE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ADCC0CA17CAEAEE00CCFADE /* Foundation.framework in Frameworks */,
+				0A29F21517DC1CC00069BAE0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0ADCC0D317CAEAEF00CCFADE /* Frameworks */ = {
+		0A29F21E17DC1CC00069BAE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ADCC0D817CAEAEF00CCFADE /* XCTest.framework in Frameworks */,
-				0ADCC0DE17CAEAEF00CCFADE /* libREST.a in Frameworks */,
-				0ADCC0DB17CAEAEF00CCFADE /* UIKit.framework in Frameworks */,
-				0ADCC0D917CAEAEF00CCFADE /* Foundation.framework in Frameworks */,
+				0A29F22317DC1CC00069BAE0 /* XCTest.framework in Frameworks */,
+				0A29F22917DC1CC00069BAE0 /* libREST.a in Frameworks */,
+				0A29F22617DC1CC00069BAE0 /* UIKit.framework in Frameworks */,
+				0A29F22417DC1CC00069BAE0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0ADCC0BD17CAEAEE00CCFADE = {
+		0A29F20817DC1CC00069BAE0 = {
 			isa = PBXGroup;
 			children = (
-				0ADCC0CB17CAEAEE00CCFADE /* REST */,
-				0ADCC0DF17CAEAEF00CCFADE /* RESTTests */,
-				0ADCC0C817CAEAEE00CCFADE /* Frameworks */,
-				0ADCC0C717CAEAEE00CCFADE /* Products */,
+				0A29F21617DC1CC00069BAE0 /* REST */,
+				0A29F22A17DC1CC00069BAE0 /* RESTTests */,
+				0A29F21317DC1CC00069BAE0 /* Frameworks */,
+				0A29F21217DC1CC00069BAE0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0ADCC0C717CAEAEE00CCFADE /* Products */ = {
+		0A29F21217DC1CC00069BAE0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0ADCC0C617CAEAEE00CCFADE /* libREST.a */,
-				0ADCC0D617CAEAEF00CCFADE /* RESTTests.xctest */,
+				0A29F21117DC1CC00069BAE0 /* libREST.a */,
+				0A29F22117DC1CC00069BAE0 /* RESTTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0ADCC0C817CAEAEE00CCFADE /* Frameworks */ = {
+		0A29F21317DC1CC00069BAE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0ADCC0C917CAEAEE00CCFADE /* Foundation.framework */,
-				0ADCC0D717CAEAEF00CCFADE /* XCTest.framework */,
-				0ADCC0DA17CAEAEF00CCFADE /* UIKit.framework */,
+				0A29F21417DC1CC00069BAE0 /* Foundation.framework */,
+				0A29F22217DC1CC00069BAE0 /* XCTest.framework */,
+				0A29F22517DC1CC00069BAE0 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0ADCC0CB17CAEAEE00CCFADE /* REST */ = {
+		0A29F21617DC1CC00069BAE0 /* REST */ = {
 			isa = PBXGroup;
 			children = (
-				0ADCC0CE17CAEAEE00CCFADE /* REST.h */,
-				0ADCC0D017CAEAEE00CCFADE /* REST.m */,
-				0A163EB617CB0BF4005F2644 /* RESTScope.h */,
-				0A163EB717CB0BF4005F2644 /* RESTScope.m */,
-				0ADCC10317CAEFE900CCFADE /* NSObject+REST.h */,
-				0ADCC10417CAEFE900CCFADE /* NSObject+REST.m */,
-				0ADA289317CAFDD600FC2A70 /* NSObject+REST_Extensions.h */,
-				0ADA289417CAFDD600FC2A70 /* NSObject+REST_Extensions.m */,
-				0ADCC0F117CAED6600CCFADE /* NSData+REST_Encodings.h */,
-				0ADCC0F217CAED6600CCFADE /* NSData+REST_Encodings.m */,
-				0ADCC0F817CAEE9300CCFADE /* NSString+REST_Encodings.h */,
-				0ADCC0F917CAEE9300CCFADE /* NSString+REST_Encodings.m */,
-				0ADCC0FD17CAEF4D00CCFADE /* NSString+REST_Inflections.h */,
-				0ADCC0FE17CAEF4D00CCFADE /* NSString+REST_Inflections.m */,
-				0ADCC10017CAEF8600CCFADE /* NSString+REST_Regex.h */,
-				0ADCC10117CAEF8600CCFADE /* NSString+REST_Regex.m */,
-				0ADA289617CAFDF100FC2A70 /* NSObject+REST_Serialization.h */,
-				0ADCC0CC17CAEAEE00CCFADE /* Supporting Files */,
+				0A29F21917DC1CC00069BAE0 /* REST.h */,
+				0A29F21B17DC1CC00069BAE0 /* REST.m */,
+				0A29F21717DC1CC00069BAE0 /* Supporting Files */,
 			);
 			path = REST;
 			sourceTree = "<group>";
 		};
-		0ADCC0CC17CAEAEE00CCFADE /* Supporting Files */ = {
+		0A29F21717DC1CC00069BAE0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0ADCC0CD17CAEAEE00CCFADE /* REST-Prefix.pch */,
+				0A29F21817DC1CC00069BAE0 /* REST-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0ADCC0DF17CAEAEF00CCFADE /* RESTTests */ = {
+		0A29F22A17DC1CC00069BAE0 /* RESTTests */ = {
 			isa = PBXGroup;
 			children = (
-				0ADCC0E517CAEAEF00CCFADE /* RESTTests.m */,
-				0ADCC0F617CAEE2600CCFADE /* REST_EncodingTests.m */,
-				0ADCC10717CAF13300CCFADE /* REST_InflectionTests.m */,
-				0ADCC0E017CAEAEF00CCFADE /* Supporting Files */,
+				0A29F23017DC1CC00069BAE0 /* RESTTests.m */,
+				0A29F22B17DC1CC00069BAE0 /* Supporting Files */,
 			);
 			path = RESTTests;
 			sourceTree = "<group>";
 		};
-		0ADCC0E017CAEAEF00CCFADE /* Supporting Files */ = {
+		0A29F22B17DC1CC00069BAE0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0ADCC0E117CAEAEF00CCFADE /* RESTTests-Info.plist */,
-				0ADCC0E217CAEAEF00CCFADE /* InfoPlist.strings */,
+				0A29F22C17DC1CC00069BAE0 /* RESTTests-Info.plist */,
+				0A29F22D17DC1CC00069BAE0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -189,13 +146,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0ADCC0C517CAEAEE00CCFADE /* REST */ = {
+		0A29F21017DC1CC00069BAE0 /* REST */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0ADCC0E917CAEAEF00CCFADE /* Build configuration list for PBXNativeTarget "REST" */;
+			buildConfigurationList = 0A29F23417DC1CC00069BAE0 /* Build configuration list for PBXNativeTarget "REST" */;
 			buildPhases = (
-				0ADCC0C217CAEAEE00CCFADE /* Sources */,
-				0ADCC0C317CAEAEE00CCFADE /* Frameworks */,
-				0ADCC0C417CAEAEE00CCFADE /* CopyFiles */,
+				0A29F20D17DC1CC00069BAE0 /* Sources */,
+				0A29F20E17DC1CC00069BAE0 /* Frameworks */,
+				0A29F20F17DC1CC00069BAE0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -203,106 +160,97 @@
 			);
 			name = REST;
 			productName = REST;
-			productReference = 0ADCC0C617CAEAEE00CCFADE /* libREST.a */;
+			productReference = 0A29F21117DC1CC00069BAE0 /* libREST.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		0ADCC0D517CAEAEF00CCFADE /* RESTTests */ = {
+		0A29F22017DC1CC00069BAE0 /* RESTTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0ADCC0EC17CAEAEF00CCFADE /* Build configuration list for PBXNativeTarget "RESTTests" */;
+			buildConfigurationList = 0A29F23717DC1CC00069BAE0 /* Build configuration list for PBXNativeTarget "RESTTests" */;
 			buildPhases = (
-				0ADCC0D217CAEAEF00CCFADE /* Sources */,
-				0ADCC0D317CAEAEF00CCFADE /* Frameworks */,
-				0ADCC0D417CAEAEF00CCFADE /* Resources */,
+				0A29F21D17DC1CC00069BAE0 /* Sources */,
+				0A29F21E17DC1CC00069BAE0 /* Frameworks */,
+				0A29F21F17DC1CC00069BAE0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0ADCC0DD17CAEAEF00CCFADE /* PBXTargetDependency */,
+				0A29F22817DC1CC00069BAE0 /* PBXTargetDependency */,
 			);
 			name = RESTTests;
 			productName = RESTTests;
-			productReference = 0ADCC0D617CAEAEF00CCFADE /* RESTTests.xctest */;
+			productReference = 0A29F22117DC1CC00069BAE0 /* RESTTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0ADCC0BE17CAEAEE00CCFADE /* Project object */ = {
+		0A29F20917DC1CC00069BAE0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Kevin Sylvestre";
 			};
-			buildConfigurationList = 0ADCC0C117CAEAEE00CCFADE /* Build configuration list for PBXProject "REST" */;
+			buildConfigurationList = 0A29F20C17DC1CC00069BAE0 /* Build configuration list for PBXProject "REST" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0ADCC0BD17CAEAEE00CCFADE;
-			productRefGroup = 0ADCC0C717CAEAEE00CCFADE /* Products */;
+			mainGroup = 0A29F20817DC1CC00069BAE0;
+			productRefGroup = 0A29F21217DC1CC00069BAE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0ADCC0C517CAEAEE00CCFADE /* REST */,
-				0ADCC0D517CAEAEF00CCFADE /* RESTTests */,
+				0A29F21017DC1CC00069BAE0 /* REST */,
+				0A29F22017DC1CC00069BAE0 /* RESTTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0ADCC0D417CAEAEF00CCFADE /* Resources */ = {
+		0A29F21F17DC1CC00069BAE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ADCC0E417CAEAEF00CCFADE /* InfoPlist.strings in Resources */,
+				0A29F22F17DC1CC00069BAE0 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0ADCC0C217CAEAEE00CCFADE /* Sources */ = {
+		0A29F20D17DC1CC00069BAE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ADCC0D117CAEAEE00CCFADE /* REST.m in Sources */,
-				0ADCC10517CAEFE900CCFADE /* NSObject+REST.m in Sources */,
-				0ADCC0F317CAED6600CCFADE /* NSData+REST_Encodings.m in Sources */,
-				0ADCC0FA17CAEE9300CCFADE /* NSString+REST_Encodings.m in Sources */,
-				0ADA289517CAFDD600FC2A70 /* NSObject+REST_Extensions.m in Sources */,
-				0ADCC0FF17CAEF4D00CCFADE /* NSString+REST_Inflections.m in Sources */,
-				0A163EB817CB0BF4005F2644 /* RESTScope.m in Sources */,
-				0ADCC10217CAEF8600CCFADE /* NSString+REST_Regex.m in Sources */,
+				0A29F21C17DC1CC00069BAE0 /* REST.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0ADCC0D217CAEAEF00CCFADE /* Sources */ = {
+		0A29F21D17DC1CC00069BAE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ADCC0E617CAEAEF00CCFADE /* RESTTests.m in Sources */,
-				0ADCC0F717CAEE2600CCFADE /* REST_EncodingTests.m in Sources */,
-				0ADCC10817CAF13300CCFADE /* REST_InflectionTests.m in Sources */,
+				0A29F23117DC1CC00069BAE0 /* RESTTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0ADCC0DD17CAEAEF00CCFADE /* PBXTargetDependency */ = {
+		0A29F22817DC1CC00069BAE0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0ADCC0C517CAEAEE00CCFADE /* REST */;
-			targetProxy = 0ADCC0DC17CAEAEF00CCFADE /* PBXContainerItemProxy */;
+			target = 0A29F21017DC1CC00069BAE0 /* REST */;
+			targetProxy = 0A29F22717DC1CC00069BAE0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0ADCC0E217CAEAEF00CCFADE /* InfoPlist.strings */ = {
+		0A29F22D17DC1CC00069BAE0 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0ADCC0E317CAEAEF00CCFADE /* en */,
+				0A29F22E17DC1CC00069BAE0 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -310,7 +258,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0ADCC0E717CAEAEF00CCFADE /* Debug */ = {
+		0A29F23217DC1CC00069BAE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -346,7 +294,7 @@
 			};
 			name = Debug;
 		};
-		0ADCC0E817CAEAEF00CCFADE /* Release */ = {
+		0A29F23317DC1CC00069BAE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,7 +324,7 @@
 			};
 			name = Release;
 		};
-		0ADCC0EA17CAEAEF00CCFADE /* Debug */ = {
+		0A29F23517DC1CC00069BAE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/REST.dst;
@@ -388,7 +336,7 @@
 			};
 			name = Debug;
 		};
-		0ADCC0EB17CAEAEF00CCFADE /* Release */ = {
+		0A29F23617DC1CC00069BAE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/REST.dst;
@@ -400,7 +348,7 @@
 			};
 			name = Release;
 		};
-		0ADCC0ED17CAEAEF00CCFADE /* Debug */ = {
+		0A29F23817DC1CC00069BAE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -415,18 +363,12 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "RESTTests/RESTTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					XCTest,
-					"-ObjC",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
-		0ADCC0EE17CAEAEF00CCFADE /* Release */ = {
+		0A29F23917DC1CC00069BAE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -437,12 +379,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "REST/REST-Prefix.pch";
 				INFOPLIST_FILE = "RESTTests/RESTTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					XCTest,
-					"-ObjC",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -451,34 +387,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0ADCC0C117CAEAEE00CCFADE /* Build configuration list for PBXProject "REST" */ = {
+		0A29F20C17DC1CC00069BAE0 /* Build configuration list for PBXProject "REST" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ADCC0E717CAEAEF00CCFADE /* Debug */,
-				0ADCC0E817CAEAEF00CCFADE /* Release */,
+				0A29F23217DC1CC00069BAE0 /* Debug */,
+				0A29F23317DC1CC00069BAE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0ADCC0E917CAEAEF00CCFADE /* Build configuration list for PBXNativeTarget "REST" */ = {
+		0A29F23417DC1CC00069BAE0 /* Build configuration list for PBXNativeTarget "REST" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ADCC0EA17CAEAEF00CCFADE /* Debug */,
-				0ADCC0EB17CAEAEF00CCFADE /* Release */,
+				0A29F23517DC1CC00069BAE0 /* Debug */,
+				0A29F23617DC1CC00069BAE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		0ADCC0EC17CAEAEF00CCFADE /* Build configuration list for PBXNativeTarget "RESTTests" */ = {
+		0A29F23717DC1CC00069BAE0 /* Build configuration list for PBXNativeTarget "RESTTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ADCC0ED17CAEAEF00CCFADE /* Debug */,
-				0ADCC0EE17CAEAEF00CCFADE /* Release */,
+				0A29F23817DC1CC00069BAE0 /* Debug */,
+				0A29F23917DC1CC00069BAE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0ADCC0BE17CAEAEE00CCFADE /* Project object */;
+	rootObject = 0A29F20917DC1CC00069BAE0 /* Project object */;
 }
