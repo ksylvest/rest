@@ -21,7 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSString *name = [NSString stringWithFormat:@"Auth_%@", [KSHelper device]];
+    NSString *name = [NSString stringWithFormat:@"Auth"];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:name bundle:nil];
     UIViewController *initialViewController = [storyboard instantiateInitialViewController];
     
