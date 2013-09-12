@@ -12,8 +12,7 @@
 		0A25B65A17E17C520026FE04 /* KSSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25B65917E17C520026FE04 /* KSSpinnerView.m */; };
 		0A25B65C17E17C760026FE04 /* KSSpinnerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A25B65B17E17C760026FE04 /* KSSpinnerView.xib */; };
 		0A25B66117E17E230026FE04 /* UIViewController+KSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25B66017E17E230026FE04 /* UIViewController+KSAdditions.m */; };
-		0A25B66417E180C30026FE04 /* KSManageProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25B66317E180C30026FE04 /* KSManageProjectViewController.m */; };
-		0A25B66717E180CD0026FE04 /* KSManageTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25B66617E180CD0026FE04 /* KSManageTaskViewController.m */; };
+		0A25B66717E180CD0026FE04 /* KSManageActionableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25B66617E180CD0026FE04 /* KSManageActionableViewController.m */; };
 		0A25B66A17E181C30026FE04 /* UIView+KSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25B66917E181C30026FE04 /* UIView+KSAdditions.m */; };
 		0A25B66E17E183840026FE04 /* KSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25B66D17E183840026FE04 /* KSConstants.m */; };
 		0A25B67117E18F430026FE04 /* KSProjectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25B67017E18F420026FE04 /* KSProjectTableViewCell.m */; };
@@ -23,6 +22,7 @@
 		0A25B6A417E192450026FE04 /* KSProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25B6A317E192450026FE04 /* KSProject.m */; };
 		0A25B6A717E192450026FE04 /* KSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25B6A617E192450026FE04 /* KSNotification.m */; };
 		0A25B6AA17E192450026FE04 /* KSTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25B6A917E192450026FE04 /* KSTask.m */; };
+		0A25B6AD17E1929D0026FE04 /* KSSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A25B6AC17E1929D0026FE04 /* KSSession.m */; };
 		0A29F1C817DC1C9F0069BAE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A29F1C717DC1C9F0069BAE0 /* Foundation.framework */; };
 		0A29F1CA17DC1C9F0069BAE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A29F1C917DC1C9F0069BAE0 /* CoreGraphics.framework */; };
 		0A29F1CC17DC1C9F0069BAE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A29F1CB17DC1C9F0069BAE0 /* UIKit.framework */; };
@@ -76,10 +76,8 @@
 		0A25B65B17E17C760026FE04 /* KSSpinnerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KSSpinnerView.xib; sourceTree = "<group>"; };
 		0A25B65F17E17E230026FE04 /* UIViewController+KSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KSAdditions.h"; sourceTree = "<group>"; };
 		0A25B66017E17E230026FE04 /* UIViewController+KSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KSAdditions.m"; sourceTree = "<group>"; };
-		0A25B66217E180C30026FE04 /* KSManageProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSManageProjectViewController.h; sourceTree = "<group>"; };
-		0A25B66317E180C30026FE04 /* KSManageProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSManageProjectViewController.m; sourceTree = "<group>"; };
-		0A25B66517E180CD0026FE04 /* KSManageTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSManageTaskViewController.h; sourceTree = "<group>"; };
-		0A25B66617E180CD0026FE04 /* KSManageTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSManageTaskViewController.m; sourceTree = "<group>"; };
+		0A25B66517E180CD0026FE04 /* KSManageActionableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSManageActionableViewController.h; sourceTree = "<group>"; };
+		0A25B66617E180CD0026FE04 /* KSManageActionableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSManageActionableViewController.m; sourceTree = "<group>"; };
 		0A25B66817E181C30026FE04 /* UIView+KSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KSAdditions.h"; sourceTree = "<group>"; };
 		0A25B66917E181C30026FE04 /* UIView+KSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KSAdditions.m"; sourceTree = "<group>"; };
 		0A25B66C17E183840026FE04 /* KSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSConstants.h; sourceTree = "<group>"; };
@@ -98,6 +96,8 @@
 		0A25B6A617E192450026FE04 /* KSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSNotification.m; sourceTree = "<group>"; };
 		0A25B6A817E192450026FE04 /* KSTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTask.h; sourceTree = "<group>"; };
 		0A25B6A917E192450026FE04 /* KSTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTask.m; sourceTree = "<group>"; };
+		0A25B6AB17E1929D0026FE04 /* KSSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSSession.h; sourceTree = "<group>"; };
+		0A25B6AC17E1929D0026FE04 /* KSSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSession.m; sourceTree = "<group>"; };
 		0A29F1C417DC1C9F0069BAE0 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A29F1C717DC1C9F0069BAE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A29F1C917DC1C9F0069BAE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -295,18 +295,20 @@
 		0A86A46317DC1E8D00610522 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0A25B6A817E192450026FE04 /* KSTask.h */,
-				0A25B6A917E192450026FE04 /* KSTask.m */,
-				0A25B6A517E192450026FE04 /* KSNotification.h */,
-				0A25B6A617E192450026FE04 /* KSNotification.m */,
-				0A25B6A217E192450026FE04 /* KSProject.h */,
-				0A25B6A317E192450026FE04 /* KSProject.m */,
+				0A25B6AB17E1929D0026FE04 /* KSSession.h */,
+				0A25B6AC17E1929D0026FE04 /* KSSession.m */,
 				0A25B69F17E192450026FE04 /* KSUser.h */,
 				0A25B6A017E192450026FE04 /* KSUser.m */,
-				0A25B69C17E192450026FE04 /* KSActionable.h */,
-				0A25B69D17E192450026FE04 /* KSActionable.m */,
+				0A25B6A517E192450026FE04 /* KSNotification.h */,
+				0A25B6A617E192450026FE04 /* KSNotification.m */,
 				0A25B69917E192440026FE04 /* KSTag.h */,
 				0A25B69A17E192440026FE04 /* KSTag.m */,
+				0A25B69C17E192450026FE04 /* KSActionable.h */,
+				0A25B69D17E192450026FE04 /* KSActionable.m */,
+				0A25B6A817E192450026FE04 /* KSTask.h */,
+				0A25B6A917E192450026FE04 /* KSTask.m */,
+				0A25B6A217E192450026FE04 /* KSProject.h */,
+				0A25B6A317E192450026FE04 /* KSProject.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -376,12 +378,10 @@
 			children = (
 				0A29F25217DC1DF00069BAE0 /* KSProjectsViewController.h */,
 				0A29F25317DC1DF00069BAE0 /* KSProjectsViewController.m */,
-				0A25B66217E180C30026FE04 /* KSManageProjectViewController.h */,
-				0A25B66317E180C30026FE04 /* KSManageProjectViewController.m */,
 				0A29F25A17DC1DF00069BAE0 /* KSTasksViewController.h */,
 				0A29F25B17DC1DF00069BAE0 /* KSTasksViewController.m */,
-				0A25B66517E180CD0026FE04 /* KSManageTaskViewController.h */,
-				0A25B66617E180CD0026FE04 /* KSManageTaskViewController.m */,
+				0A25B66517E180CD0026FE04 /* KSManageActionableViewController.h */,
+				0A25B66617E180CD0026FE04 /* KSManageActionableViewController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -504,11 +504,11 @@
 				0A25B64E17E1756C0026FE04 /* KSTableViewCell.m in Sources */,
 				0A29F1DA17DC1C9F0069BAE0 /* KSAppDelegate.m in Sources */,
 				0A25B65117E175940026FE04 /* KSCollectionViewCell.m in Sources */,
+				0A25B6AD17E1929D0026FE04 /* KSSession.m in Sources */,
 				0A25B6A717E192450026FE04 /* KSNotification.m in Sources */,
 				0A29F25E17DC1DF00069BAE0 /* KSAuthenticationViewController.m in Sources */,
 				0A29F26017DC1DF00069BAE0 /* KSHelper.m in Sources */,
 				0A25B69B17E192440026FE04 /* KSTag.m in Sources */,
-				0A25B66417E180C30026FE04 /* KSManageProjectViewController.m in Sources */,
 				0A25B65A17E17C520026FE04 /* KSSpinnerView.m in Sources */,
 				0A29F26817DC1DF00069BAE0 /* KSTasksViewController.m in Sources */,
 				0A25B6A417E192450026FE04 /* KSProject.m in Sources */,
@@ -525,7 +525,7 @@
 				0A25B66E17E183840026FE04 /* KSConstants.m in Sources */,
 				0A29F1D617DC1C9F0069BAE0 /* main.m in Sources */,
 				0A29F26617DC1DF00069BAE0 /* KSSignupViewController.m in Sources */,
-				0A25B66717E180CD0026FE04 /* KSManageTaskViewController.m in Sources */,
+				0A25B66717E180CD0026FE04 /* KSManageActionableViewController.m in Sources */,
 				0AA4768E17DC336800B036C1 /* KSRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

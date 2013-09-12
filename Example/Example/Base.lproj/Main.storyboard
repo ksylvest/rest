@@ -19,10 +19,10 @@
             </objects>
             <point key="canvasLocation" x="-3" y="64"/>
         </scene>
-        <!--Projects View Controller - Master-->
+        <!--Projects View Controller-->
         <scene sceneID="VgW-fR-Quf">
             <objects>
-                <tableViewController title="Master" id="pGg-6v-bdr" customClass="KSProjectsViewController" sceneMemberID="viewController">
+                <tableViewController title="Master" id="pGg-6v-bdr" userLabel="Projects View Controller" customClass="KSProjectsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="mLL-gJ-YKr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="923" y="64"/>
         </scene>
-        <!--Manage Project View Controller - New-->
+        <!--Manage Acionable View Controller-->
         <scene sceneID="shN-ag-i2G">
             <objects>
-                <tableViewController id="CA1-uc-QXQ" customClass="KSManageProjectViewController" sceneMemberID="viewController">
+                <tableViewController id="CA1-uc-QXQ" userLabel="Manage Acionable View Controller" customClass="KSManageActionableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="HbN-MU-QRc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,10 +290,16 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <navigationItem key="navigationItem" title="New" id="hyg-b7-aeA">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="jqB-VQ-Kap">
                             <connections>
-                                <action selector="saveBarButtonItemSelector:" destination="CA1-uc-QXQ" id="byg-jg-YEP"/>
+                                <action selector="saveBarButtonItemSelector:" destination="CA1-uc-QXQ" id="pe1-An-Sba"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dateDatePicker" destination="548-IX-p67" id="y1r-sM-qL6"/>
+                        <outlet property="nameTextField" destination="xGU-GR-h9P" id="Qfy-7H-w9r"/>
+                        <outlet property="notesTextView" destination="chp-bb-cZF" id="dDW-KP-rsl"/>
+                        <outlet property="tagsTextField" destination="COs-bi-07y" id="KCO-17-BmT"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u58-Ga-cSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

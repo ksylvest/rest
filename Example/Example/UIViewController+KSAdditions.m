@@ -24,8 +24,12 @@ static NSInteger kCustomSpinnerViewTag = (NSInteger)(&kCustomSpinnerViewTag);
     UIView *spinner = [KSSpinnerView create];
     spinner.tag = kCustomSpinnerViewTag;
     
-    [self.view addSubview:spinner];
-    spinner.frame = (CGRect){ CGPointZero, self.view.frame.size };
+    UIView *parent = self.view;
+    if (parent.superview) parent = parent.superview;
+    
+    [parent addSubview:spinner];
+
+    spinner.frame = (CGRect){ CGPointZero, parent.frame.size };
     
     [spinner setAutoresizingMask:(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight)];
     
@@ -39,7 +43,10 @@ static NSInteger kCustomSpinnerViewTag = (NSInteger)(&kCustomSpinnerViewTag);
 
 - (void)dismissSpinnerView
 {
-    UIView *spinner = [self.view viewWithTag:kCustomSpinnerViewTag];
+    UIView *parent = self.view;
+    if (parent.superview) parent = parent.superview;
+    
+    UIView *spinner = [parent viewWithTag:kCustomSpinnerViewTag];
     
     spinner.alpha = 1.0f;
     id animations = ^{
