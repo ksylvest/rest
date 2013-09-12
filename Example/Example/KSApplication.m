@@ -15,6 +15,8 @@ static BOOL authenticated = YES;
 
 @implementation KSApplication
 
+////////////////////////////////////////////////////////////////////////////////
+
 #pragma mark - Globals
 
 + (BOOL)authenticated

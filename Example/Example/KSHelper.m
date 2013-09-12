@@ -10,6 +10,10 @@
 
 @implementation KSHelper
 
+////////////////////////////////////////////////////////////////////////////////
+
+#pragma mark - Device
+
 + (BOOL)isPad
 {
     return ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad);

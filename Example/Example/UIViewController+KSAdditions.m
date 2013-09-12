@@ -17,6 +17,8 @@
 
 static NSInteger kCustomSpinnerViewTag = (NSInteger)(&kCustomSpinnerViewTag);
 
+////////////////////////////////////////////////////////////////////////////////
+
 #pragma mark - Helpers
 
 - (void)presentSpinnerView
