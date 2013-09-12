@@ -28,16 +28,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Search" id="7zl-sw-oSt">
-                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
+                            <scopeButtonTitles>
+                                <string>All</string>
+                                <string>Pending</string>
+                                <string>Complete</string>
+                            </scopeButtonTitles>
                             <connections>
                                 <outlet property="delegate" destination="pGg-6v-bdr" id="LSF-6R-0Tu"/>
                             </connections>
                         </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="2pz-XF-uhl" style="IBUITableViewCellStyleDefault" id="m0d-ak-lc9" customClass="KSProjectTableViewCell">
-                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m0d-ak-lc9" id="Uxt-jf-IpS">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -100,7 +105,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" placeholder="Search" id="try-be-4OB">
-                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
@@ -109,7 +114,7 @@
                         </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Wgj-Nk-iHX" style="IBUITableViewCellStyleDefault" id="ZhT-Az-NuT">
-                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZhT-Az-NuT" id="x2I-9j-dfw">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -161,7 +166,7 @@
                             <tableViewSection headerTitle="General" id="7rd-AM-aKj">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="L7p-ip-t7S" userLabel="Table View Cell - Name">
-                                        <rect key="frame" x="0.0" y="119" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="55" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L7p-ip-t7S" id="ytz-fA-zY7">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -183,7 +188,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="mFW-ZB-JQe" userLabel="Table View Cell - Tags">
-                                        <rect key="frame" x="0.0" y="163" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mFW-ZB-JQe" id="BDe-5S-nSy">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -209,7 +214,7 @@
                             <tableViewSection headerTitle="Notes" id="kQy-5Q-DGy">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="88" id="EBR-U8-cLk" userLabel="Table View Cell - Notes">
-                                        <rect key="frame" x="0.0" y="255" width="320" height="88"/>
+                                        <rect key="frame" x="0.0" y="191" width="320" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EBR-U8-cLk" id="0zD-Ab-UAI">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
@@ -236,7 +241,7 @@
                             <tableViewSection headerTitle="Due" id="DYJ-tk-Nj2">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="162" id="64x-PA-UPK" userLabel="Table View Cell - Notes">
-                                        <rect key="frame" x="0.0" y="391" width="320" height="162"/>
+                                        <rect key="frame" x="0.0" y="327" width="320" height="162"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="64x-PA-UPK" id="rCB-QE-Yrq">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="161"/>
@@ -249,7 +254,7 @@
                                                         <!--2013-09-12 05:50:38 +0000-->
                                                     </date>
                                                     <timeZone key="timeZone" name="America/Los_Angeles">
-                                                        <mutableData key="data">
+                                                        <data key="data">
 VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
 y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
 5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
@@ -267,7 +272,7 @@ f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
-</mutableData>
+</data>
                                                     </timeZone>
                                                 </datePicker>
                                             </subviews>
@@ -295,7 +300,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="dateDatePicker" destination="548-IX-p67" id="y1r-sM-qL6"/>
+                        <outlet property="dueDatePicker" destination="548-IX-p67" id="cRZ-ug-HTO"/>
                         <outlet property="nameTextField" destination="xGU-GR-h9P" id="Qfy-7H-w9r"/>
                         <outlet property="notesTextView" destination="chp-bb-cZF" id="dDW-KP-rsl"/>
                         <outlet property="tagsTextField" destination="COs-bi-07y" id="KCO-17-BmT"/>

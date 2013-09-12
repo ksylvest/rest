@@ -9,6 +9,11 @@
 #import "KSActionable.h"
 #import "KSTag.h"
 
+const NSString * KSActionableIdentifier = @"id";
+const NSString * KSActionableName = @"name";
+const NSString * KSActionableNotes = @"notes";
+const NSString * KSActionableDue = @"due";
+const NSString * KSActionableTags = @"tags";
 
 @implementation KSActionable
 

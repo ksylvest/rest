@@ -11,6 +11,12 @@
 
 @class KSTag;
 
+extern const NSString * KSActionableIdentifier;
+extern const NSString * KSActionableName;
+extern const NSString * KSActionableNotes;
+extern const NSString * KSActionableDue;
+extern const NSString * KSActionableTags;
+
 @interface KSActionable : NSManagedObject
 
 @property (nonatomic, retain) NSNumber * identifier;

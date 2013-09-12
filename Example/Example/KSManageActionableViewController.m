@@ -12,12 +12,14 @@
 
 #import "KSActionable.h"
 
+#import <REST/REST.h>
+
 @interface KSManageActionableViewController ()
 
 @property (nonatomic, weak) IBOutlet UITextField *nameTextField;
 @property (nonatomic, weak) IBOutlet UITextField *tagsTextField;
 @property (nonatomic, weak) IBOutlet UITextView *notesTextView;
-@property (nonatomic, weak) IBOutlet UIDatePicker *dateDatePicker;
+@property (nonatomic, weak) IBOutlet UIDatePicker *dueDatePicker;
 
 @end
 
@@ -27,9 +29,31 @@
 
 #pragma mark - Actions
 
+- (NSDictionary *)parameterize
+{
+    return @{
+             KSActionableName: self.nameTextField.text,
+             KSActionableTags: self.tagsTextField.text,
+             KSActionableNotes: self.nameTextField.text,
+             KSActionableDue: self.dueDatePicker.date,
+             };
+}
+
 - (IBAction)saveBarButtonItemSelector:(id)sender
 {
     [self presentSpinnerView];
+    
+    __block KSManageActionableViewController *vc = self;
+    
+    RESTSuccess success = ^(id object) {
+        [vc dismissSpinnerView];
+    };
+    
+    RESTFailure failure = ^(NSError *failure) {
+        [vc dismissSpinnerView];
+    };
+    
+    [KSActionable REST_create:[self parameterize] success:success failure:failure];
 }
 
 @end
