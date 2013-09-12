@@ -8,8 +8,6 @@
 
 #import "KSAppDelegate.h"
 
-#import "KSMasterViewController.h"
-
 #import "KSGlobals.h"
 #import "KSHelper.h"
 

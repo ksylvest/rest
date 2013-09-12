@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KSTasksViewController : UIViewController
+@interface KSTasksViewController : UITableViewController
 
 @end

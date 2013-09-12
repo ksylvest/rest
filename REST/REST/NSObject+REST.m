@@ -120,7 +120,7 @@
 
 + (void)REST_findWithURL:(NSURL *)url success:(RESTSuccess)success failure:(RESTFailure)failure
 {
-    NSError *error = [NSError errorWithDomain:@"com.ksylvest" code:0 userInfo:nil];
+    // NSError *error = [NSError errorWithDomain:@"com.ksylvest" code:0 userInfo:nil];
     if (success) success(@{});
 }
 
@@ -140,7 +140,7 @@
 
 - (void)REST_create:(NSDictionary *)parameters url:(NSURL *)url success:(RESTSuccess)success failure:(RESTFailure)failure
 {
-    NSError *error = [NSError errorWithDomain:@"com.ksylvest" code:0 userInfo:nil];
+    // NSError *error = [NSError errorWithDomain:@"com.ksylvest" code:0 userInfo:nil];
     if (success) success(@{});
 }
 
@@ -160,7 +160,7 @@
 
 - (void)REST_update:(NSDictionary *)parameters url:(NSURL *)url success:(RESTSuccess)success failure:(RESTFailure)failure
 {
-    NSError *error = [NSError errorWithDomain:@"com.ksylvest" code:0 userInfo:nil];
+    // NSError *error = [NSError errorWithDomain:@"com.ksylvest" code:0 userInfo:nil];
     if (success) success(@{});
 }
 
@@ -180,7 +180,7 @@
 
 - (void)REST_deleteWithURL:(NSURL *)url success:(RESTSuccess)success failure:(RESTFailure)failure;
 {
-    NSError *error = [NSError errorWithDomain:@"com.ksylvest" code:0 userInfo:nil];
+    // NSError *error = [NSError errorWithDomain:@"com.ksylvest" code:0 userInfo:nil];
     if (success) success(@{});
 }
 

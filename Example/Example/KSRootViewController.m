@@ -68,10 +68,14 @@
     [self addChildViewController:childViewController];
     [self.activeViewController willMoveToParentViewController:nil];
     
-    UIViewAnimationOptions options = UIViewAnimationOptionCurveEaseInOut | UIViewAnimationOptionTransitionCrossDissolve;
+    UIViewAnimationOptions options = UIViewAnimationOptionCurveEaseInOut;
+    CGAffineTransform alpha = CGAffineTransformMakeScale(0.0, 0.0);
+    CGAffineTransform omega = CGAffineTransformMakeScale(1.0, 1.0);
+    
+    [childViewController.view setTransform:alpha];
     
     void (^animations)(void) = ^{
-        
+        [childViewController.view setTransform:omega];
     };
     
     void (^completion)(BOOL) = ^(BOOL finished){
@@ -81,7 +85,7 @@
     };
     
     [self transitionFromViewController:self.activeViewController toViewController:childViewController
-                              duration:0.2 options:options animations:animations completion:completion];
+                              duration:0.2f options:options animations:animations completion:completion];
 }
 
 @end

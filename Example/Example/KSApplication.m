@@ -11,7 +11,7 @@
 @class KSSession;
 @class KSUser;
 
-static BOOL authenticated = NO;
+static BOOL authenticated = YES;
 
 @implementation KSApplication
 

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
 #import "NSObject+REST.h"
 
@@ -29,5 +30,10 @@
 
 + (NSString *)format;
 + (void)setFormat:(NSString *)format;
+
++ (NSManagedObjectContext *)managedOjectContext;
++ (NSManagedObjectModel *)managedObjectModelNamed:(NSString *)name withExtension:(NSString *)extension;
++ (NSPersistentStoreCoordinator *)persistentStoreCoordinatorAtPath:(NSString *)path;
++ (NSURL *)applicationDocumentsDirectory;
 
 @end
