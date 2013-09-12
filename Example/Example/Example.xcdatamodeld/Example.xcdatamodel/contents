@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="13A569" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Actionable" representedClassName="KSActionable" isAbstract="YES" syncable="YES">
+        <attribute name="due" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="actionable" inverseEntity="Tag" syncable="YES"/>
+    </entity>
     <entity name="Notification" representedClassName="KSNotification" syncable="YES">
-        <attribute name="identifier" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
         <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Project" representedClassName="KSProject" syncable="YES">
+    <entity name="Project" representedClassName="KSProject" parentEntity="Actionable" syncable="YES">
+        <relationship name="tags" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tag" inverseName="actionable" inverseEntity="Tag" syncable="YES"/>
+    </entity>
+    <entity name="Tag" representedClassName="KSTag" syncable="YES">
         <attribute name="due" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="identifier" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="tags" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tag" inverseName="project" inverseEntity="Tag" syncable="YES"/>
+        <relationship name="actionable" optional="YES" maxCount="1" deletionRule="Nullify" ordered="YES" destinationEntity="Actionable" inverseName="tags" inverseEntity="Actionable" syncable="YES"/>
     </entity>
-    <entity name="Tag" syncable="YES">
-        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="name" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <relationship name="project" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Project" inverseName="tags" inverseEntity="Project" syncable="YES"/>
-    </entity>
-    <entity name="Task" representedClassName="KSTask">
-        <attribute name="identifier" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+    <entity name="Task" representedClassName="KSTask" parentEntity="Actionable">
+        <relationship name="tags" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Tag" syncable="YES"/>
         <userInfo/>
     </entity>
     <entity name="User" representedClassName="KSUser" syncable="YES">
@@ -32,5 +37,6 @@
         <element name="Task" positionX="0" positionY="0" width="0" height="0"/>
         <element name="User" positionX="0" positionY="0" width="0" height="0"/>
         <element name="Tag" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Actionable" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>
