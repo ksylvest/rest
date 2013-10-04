@@ -9,7 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-#import "NSObject+REST.h"
+#import "NSObject+REST_Extensions.h"
+#import "NSObject+REST_Remote.h"
+#import "RESTScope.h"
+
+typedef void (^RESTOperation)(void);
 
 @interface REST : NSObject
 
@@ -31,9 +35,8 @@
 + (NSString *)format;
 + (void)setFormat:(NSString *)format;
 
-+ (NSManagedObjectContext *)managedOjectContext;
-+ (NSManagedObjectModel *)managedObjectModelNamed:(NSString *)name withExtension:(NSString *)extension;
-+ (NSPersistentStoreCoordinator *)persistentStoreCoordinatorAtPath:(NSString *)path;
-+ (NSURL *)applicationDocumentsDirectory;
++ (void)background:(RESTOperation)operation priority:(NSInteger)priority;
++ (void)background:(RESTOperation)operation;
++ (void)foreground:(RESTOperation)operation;
 
 @end

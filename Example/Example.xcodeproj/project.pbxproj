@@ -47,6 +47,7 @@
 		0A29F26417DC1DF00069BAE0 /* KSProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F25317DC1DF00069BAE0 /* KSProjectsViewController.m */; };
 		0A29F26617DC1DF00069BAE0 /* KSSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F25717DC1DF00069BAE0 /* KSSignupViewController.m */; };
 		0A29F26817DC1DF00069BAE0 /* KSTasksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A29F25B17DC1DF00069BAE0 /* KSTasksViewController.m */; };
+		0A5A7DC617E66815003B627D /* KSProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A7DC517E66815003B627D /* KSProjectTests.m */; };
 		0AA17ABB17DC21CB00EA7916 /* libREST.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA17ABA17DC21CB00EA7916 /* libREST.a */; };
 		0AA4767C17DC2EA400B036C1 /* KSApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA4767B17DC2EA400B036C1 /* KSApplication.m */; };
 		0AA4768817DC331E00B036C1 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA4768617DC331E00B036C1 /* Root.storyboard */; };
@@ -132,6 +133,7 @@
 		0A29F25717DC1DF00069BAE0 /* KSSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSignupViewController.m; sourceTree = "<group>"; };
 		0A29F25A17DC1DF00069BAE0 /* KSTasksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSTasksViewController.h; sourceTree = "<group>"; };
 		0A29F25B17DC1DF00069BAE0 /* KSTasksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSTasksViewController.m; sourceTree = "<group>"; };
+		0A5A7DC517E66815003B627D /* KSProjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSProjectTests.m; sourceTree = "<group>"; };
 		0AA17ABA17DC21CB00EA7916 /* libREST.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libREST.a; path = "../REST/build/Debug-iphoneos/libREST.a"; sourceTree = "<group>"; };
 		0AA4767A17DC2EA400B036C1 /* KSApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSApplication.h; sourceTree = "<group>"; };
 		0AA4767B17DC2EA400B036C1 /* KSApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSApplication.m; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				0A29F1FE17DC1C9F0069BAE0 /* ExampleTests.m */,
+				0A5A7DC517E66815003B627D /* KSProjectTests.m */,
 				0A29F1F917DC1C9F0069BAE0 /* Supporting Files */,
 			);
 			path = ExampleTests;
@@ -535,6 +538,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A29F1FF17DC1C9F0069BAE0 /* ExampleTests.m in Sources */,
+				0A5A7DC617E66815003B627D /* KSProjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

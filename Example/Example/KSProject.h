@@ -10,10 +10,6 @@
 #import <CoreData/CoreData.h>
 #import "KSActionable.h"
 
-@class KSTag;
-
 @interface KSProject : KSActionable
-
-@property (nonatomic, retain) KSTag *tags;
 
 @end

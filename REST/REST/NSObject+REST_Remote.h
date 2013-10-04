@@ -1,5 +1,5 @@
 //
-//  NSObject+REST.h
+//  NSObject+REST_Remote.h
 //  REST
 //
 //  Created by Kevin Sylvestre on 7/31/13.
@@ -11,7 +11,7 @@
 typedef void (^RESTSuccess)(id object);
 typedef void (^RESTFailure)(NSError *error);
 
-@interface NSObject (REST)
+@interface NSObject (REST_Remote)
 
 - (NSDictionary *)REST_properties;
 

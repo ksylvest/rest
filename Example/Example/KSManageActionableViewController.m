@@ -39,18 +39,21 @@
              };
 }
 
-- (IBAction)saveBarButtonItemSelector:(id)sender
+- (IBAction)saveBarButtonItemSelector:(UIBarButtonItem *)sender
 {
+    sender.enabled = NO;
     [self presentSpinnerView];
     
     __block KSManageActionableViewController *vc = self;
     
     RESTSuccess success = ^(id object) {
         [vc dismissSpinnerView];
+        sender.enabled = YES;
     };
     
     RESTFailure failure = ^(NSError *failure) {
         [vc dismissSpinnerView];
+        sender.enabled = YES;
     };
     
     [KSActionable REST_create:[self parameterize] success:success failure:failure];

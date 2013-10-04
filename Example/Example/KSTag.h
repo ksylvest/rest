@@ -8,15 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import <REST/RESTSerializable.h>
 
 @class KSActionable;
 
-@interface KSTag : NSManagedObject
+extern const NSString * KSTagIdentifier;
+extern const NSString * KSTagName;
+
+@interface KSTag : NSManagedObject <RESTSerializable>
 
 @property (nonatomic, retain) NSNumber * identifier;
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSDate * due;
-@property (nonatomic, retain) NSString * notes;
 @property (nonatomic, retain) KSActionable *actionable;
 
 @end

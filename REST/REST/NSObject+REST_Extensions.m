@@ -16,40 +16,37 @@
 
 #pragma mark - Scoping
 
-- (RESTScope *)REST_scope
++ (RESTScope *)REST_scope
 {
-    if ([self isKindOfClass:[RESTScope class]]) return (RESTScope *)self;
-    else return [[RESTScope alloc] initWithClass:[self class]];
+    return [[RESTScope alloc] initWithClass:[self class]];
 }
 
-- (RESTScope *)REST_where:(id)parameters
++ (RESTScope *)REST_where:(id)parameters, ...
 {
-    RESTScope *scope = [self REST_scope];
-    return [scope where:parameters];
+    va_list args;
+    va_start(args, parameters);
+    
+    return [[self REST_scope] where:parameters];
 }
 
-- (RESTScope *)REST_order:(id)parameters
++ (RESTScope *)REST_order:(id)parameters, ...
 {
-    RESTScope *scope = [self REST_scope];
-    return [scope order:parameters];
+    return [[self REST_scope] order:parameters];
 }
 
-- (RESTScope *)REST_find:(id)parameters
++ (RESTScope *)REST_find:(id)parameters, ...
 {
-    RESTScope *scope = [self REST_scope];
-    return [scope find:parameters];
+    return [[self REST_scope] find:parameters];
 }
 
-- (RESTScope *)REST_limit:(NSInteger)limit
++ (RESTScope *)REST_limit:(NSInteger)limit
 {
-    RESTScope *scope = [self REST_scope];
-    return [scope limit:limit];
+    return [[self REST_scope] limit:limit];
 }
 
-- (RESTScope *)REST_offset:(NSInteger)offset
++ (RESTScope *)REST_offset:(NSInteger)offset
 {
-    RESTScope *scope = [self REST_scope];
-    return [scope offset:offset];
+    return [[self REST_scope] offset:offset];
 }
 
 ////////////////////////////////////////////////////////////////////////////////

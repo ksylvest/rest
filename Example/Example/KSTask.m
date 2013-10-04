@@ -7,11 +7,7 @@
 //
 
 #import "KSTask.h"
-#import "KSTag.h"
-
 
 @implementation KSTask
-
-@dynamic tags;
 
 @end

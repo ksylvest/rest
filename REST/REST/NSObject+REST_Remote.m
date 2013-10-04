@@ -1,17 +1,17 @@
 //
-//  NSObject+REST.m
+//  NSObject+REST_Remote.m
 //  REST
 //
 //  Created by Kevin Sylvestre on 8/25/13.
 //  Copyright (c) 2013 Kevin Sylvestre. All rights reserved.
 //
 
-#import "NSObject+REST.h"
+#import "NSObject+REST_Remote.h"
 #import "NSString+REST_Inflections.h"
 
 #import "REST.h"
 
-@implementation NSObject (REST)
+@implementation NSObject (REST_Remote)
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -133,12 +133,12 @@
     [self REST_create:parameters path:[self REST_defaultCreatePath] success:success failure:failure];
 }
 
-- (void)REST_create:(NSDictionary *)parameters path:(NSString *)path success:(RESTSuccess)success failure:(RESTFailure)failure
++ (void)REST_create:(NSDictionary *)parameters path:(NSString *)path success:(RESTSuccess)success failure:(RESTFailure)failure
 {
     [self REST_create:parameters url:[REST URLWithPath:path] success:success failure:failure];
 }
 
-- (void)REST_create:(NSDictionary *)parameters url:(NSURL *)url success:(RESTSuccess)success failure:(RESTFailure)failure
++ (void)REST_create:(NSDictionary *)parameters url:(NSURL *)url success:(RESTSuccess)success failure:(RESTFailure)failure
 {
     // NSError *error = [NSError errorWithDomain:@"com.ksylvest" code:0 userInfo:nil];
     if (success) success(@{});

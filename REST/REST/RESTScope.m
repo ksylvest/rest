@@ -35,16 +35,28 @@
     return self;
 }
 
+- (void)modifyFetchRequest:(NSFetchRequest *)modifyFetchRequest
+{
+    modifyFetchRequest.predicate = [self predicate];
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 
 #pragma mark - Terminators
 
-- (NSManagedObjectContext *)managedObjectContext
+- (NSFetchRequest *)filteredFetchRequest
 {
-    return nil;
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:NSStringFromClass(self.klass)];
+    if (self.limit > 0) [request setFetchLimit:self.limit];
+    if (self.offset > 0) [request setFetchOffset:self.offset];
+    
+    [request setPredicate:[self predicate]];
+    [request setSortDescriptors:[self orderSortDescriptors]];
+
+    return request;
 }
 
-- (NSFetchedResultsController *)fetchedResultsController
+- (NSManagedObjectContext *)managedObjectContext
 {
     return nil;
 }
@@ -79,16 +91,14 @@
     return [NSCompoundPredicate andPredicateWithSubpredicates:subpredicates];
 }
 
+- (NSFetchedResultsController *)fetchedResultsController
+{
+    return nil;
+}
+
 - (NSArray *)array
 {
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:NSStringFromClass(self.klass)];
-    
-    if (self.limit) [request setFetchLimit:self.limit];
-    if (self.offset) [request setFetchOffset:self.offset];
-    
-    [request setPredicate:[self predicate]];
-    [request setSortDescriptors:[self orderSortDescriptors]];
-    
+    NSFetchRequest *request = [self filteredFetchRequest];
     return [[self managedObjectContext] executeFetchRequest:request error:NULL];
 }
 

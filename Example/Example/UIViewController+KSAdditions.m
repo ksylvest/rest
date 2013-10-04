@@ -19,10 +19,25 @@ static NSInteger kCustomSpinnerViewTag = (NSInteger)(&kCustomSpinnerViewTag);
 
 ////////////////////////////////////////////////////////////////////////////////
 
-#pragma mark - Helpers
+#pragma mark - Spinners
+
+- (UIView *)activeSpinnerView
+{
+    UIView *parent = self.view;
+    if (parent.superview) parent = parent.superview;
+
+    return [parent viewWithTag:kCustomSpinnerViewTag];
+}
+
+- (BOOL)hasSpinnerView
+{
+    return !![self activeSpinnerView];
+}
 
 - (void)presentSpinnerView
 {
+    if ([self hasSpinnerView]) return;
+    
     UIView *spinner = [KSSpinnerView create];
     spinner.tag = kCustomSpinnerViewTag;
     
@@ -45,10 +60,9 @@ static NSInteger kCustomSpinnerViewTag = (NSInteger)(&kCustomSpinnerViewTag);
 
 - (void)dismissSpinnerView
 {
-    UIView *parent = self.view;
-    if (parent.superview) parent = parent.superview;
+    if (![self hasSpinnerView]) return;
     
-    UIView *spinner = [parent viewWithTag:kCustomSpinnerViewTag];
+    UIView *spinner = [self activeSpinnerView];
     
     spinner.alpha = 1.0f;
     id animations = ^{

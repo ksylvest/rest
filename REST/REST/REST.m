@@ -112,4 +112,23 @@ static NSString *_password = nil;
     return _format;
 }
 
+////////////////////////////////////////////////////////////////////////////////
+
+#pragma mark - Helpers
+
++ (void)background:(RESTOperation)operation priority:(NSInteger)priority
+{
+    dispatch_async(dispatch_get_global_queue(priority, 0), operation);
+}
+
++ (void)background:(RESTOperation)operation
+{
+    [self background:operation priority:DISPATCH_QUEUE_PRIORITY_DEFAULT];
+}
+
++ (void)foreground:(RESTOperation)operation
+{
+    dispatch_async(dispatch_get_main_queue(), operation);
+}
+
 @end

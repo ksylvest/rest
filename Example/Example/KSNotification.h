@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import <REST/RESTSerializable.h>
 
+extern const NSString * KSNotificationIdentifier;
+extern const NSString * KSNotificationMessage;
+extern const NSString * KSNotificationStatus;
 
-@interface KSNotification : NSManagedObject
+@interface KSNotification : NSManagedObject <RESTSerializable>
 
 @property (nonatomic, retain) NSNumber * identifier;
 @property (nonatomic, retain) NSString * message;

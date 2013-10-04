@@ -23,4 +23,26 @@ const NSString * KSActionableTags = @"tags";
 @dynamic due;
 @dynamic tags;
 
+////////////////////////////////////////////////////////////////////////////////
+
+#pragma mark - Serializable
+
+- (void)REST_deserialize:(NSDictionary *)data
+{
+    self.identifier = data[KSActionableIdentifier];
+    self.name = data[KSActionableName];
+    self.notes = data[KSActionableNotes];
+    self.due = data[KSActionableDue];
+}
+
+- (NSDictionary *)REST_serialize
+{
+    return @{
+             KSActionableIdentifier: self.identifier,
+             KSActionableName: self.name,
+             KSActionableNotes: self.notes,
+             KSActionableDue: self.due,
+             };
+}
+
 @end

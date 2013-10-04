@@ -9,11 +9,20 @@
 #import "KSSession.h"
 #import "KSUser.h"
 
+const NSString * KSSessionEmail = @"email";
+const NSString * KSSessionPassword = @"password";
+
 @implementation KSSession
 
-- (KSUser *)user
-{
-    return nil;
-}
+////////////////////////////////////////////////////////////////////////////////
 
+#pragma mark - Serializable
+
+- (NSDictionary *)REST_serialize
+{
+    return @{
+             KSSessionEmail: self.email,
+             KSSessionPassword: self.password,
+             };
+}
 @end

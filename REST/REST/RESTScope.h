@@ -18,19 +18,20 @@
 - (NSArray *)array;
 - (NSFetchedResultsController *)fetchedResultsController;
 - (NSManagedObjectContext *)managedObjectContext;
+- (void)modifyFetchRequest:(NSFetchRequest *)modifyFetchRequest;
 
-- (RESTScope *)where:(id)parameters;
-- (RESTScope *)order:(id)parameters;
-- (RESTScope *)limit:(NSInteger)limit;
-- (RESTScope *)offset:(NSInteger)offset;
+- (RESTScope *)REST_where:(id)parameters, ...;
+- (RESTScope *)REST_order:(id)parameters, ...;
+- (RESTScope *)REST_limit:(NSInteger)limit;
+- (RESTScope *)REST_offset:(NSInteger)offset;
 
-- (id)find:(id)parameters;
+- (id)REST_find:(id)parameters, ...;
 
-- (id)create:(NSDictionary *)parameters;
-- (id)create:(NSDictionary *)parameters block:(void (^)(id))block;
+- (id)REST_create:(NSDictionary *)parameters;
+- (id)REST_create:(NSDictionary *)parameters block:(void (^)(id))block;
 
-- (id)update:(NSDictionary *)parameters;
-- (id)update:(NSDictionary *)parameters block:(void (^)(id))block;
+- (id)REST_update:(NSDictionary *)parameters;
+- (id)REST_update:(NSDictionary *)parameters block:(void (^)(id))block;
 
 
 @end

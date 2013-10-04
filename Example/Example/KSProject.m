@@ -7,11 +7,8 @@
 //
 
 #import "KSProject.h"
-#import "KSTag.h"
 
 
 @implementation KSProject
-
-@dynamic tags;
 
 @end

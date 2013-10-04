@@ -64,6 +64,7 @@ Drag the 'REST' directory into your project. Select "Copy items into the destina
     scope = [scope REST_where:@{ @"author": @"J. D. Salinger" }];
     scope = [scope REST_where:@"(name like[CD] %@) AND (published > %@)", @"Catcher", @"July 16, 1951"];
     scope = [scope REST_order:@"name"];
+    scope = [scope REST_order:@"name"];
     scope = [scope REST_limit:@8];
     scope = [scope REST_offset:@2];
     NSFetchedResultsController *frc = [scope REST_fetchedResultsController];

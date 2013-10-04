@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import <REST/RESTSerializable.h>
 
+extern const NSString * KSUserIdentifier;
+extern const NSString * KSUserName;
+extern const NSString * KSUserEmail;
+extern const NSString * KSUserPassword;
 
-@interface KSUser : NSManagedObject
+@interface KSUser : NSManagedObject <RESTSerializable>
 
 @property (nonatomic, retain) NSString * email;
 @property (nonatomic, retain) NSString * identifier;

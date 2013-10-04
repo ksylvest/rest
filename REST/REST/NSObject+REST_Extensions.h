@@ -10,13 +10,13 @@
 
 @interface NSObject (REST_Extensions)
 
-- (id)REST_find:(id)parameters;
++ (id)REST_find:(id)parameters;
 
-- (RESTScope *)REST_scope;
-- (RESTScope *)REST_where:(id)parameters;
-- (RESTScope *)REST_order:(id)parameters;
-- (RESTScope *)REST_limit:(NSInteger)limit;
-- (RESTScope *)REST_offset:(NSInteger)offset;
++ (RESTScope *)REST_scope;
++ (RESTScope *)REST_where:(id)parameters, ...;
++ (RESTScope *)REST_order:(id)parameters, ...;
++ (RESTScope *)REST_limit:(NSInteger)limit;
++ (RESTScope *)REST_offset:(NSInteger)offset;
 
 + (id)REST_create:(NSDictionary *)parameters;
 + (id)REST_create:(NSDictionary *)parameters do:(void (^)(id))block;

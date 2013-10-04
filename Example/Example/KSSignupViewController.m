@@ -34,7 +34,7 @@
     NSString *email = self.emailTextField.text;
     NSString *password = self.passwordTextField.text;
     
-    NSDictionary *parameters = @{ @"name": name, @"email": email, @"password": password };
+    NSDictionary *parameters = @{ KSUserName: name, KSUserEmail: email, KSUserPassword: password };
     
     RESTSuccess success = ^(NSDictionary *response) {
         KSSession *session = [[KSSession alloc] init];

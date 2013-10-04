@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+#import <REST/RESTSerializable.h>
+
 @class KSUser;
 
-@interface KSSession : NSObject
+extern const NSString * KSSessionEmail;
+extern const NSString * KSSessionPassword;
+
+@interface KSSession : NSObject <RESTSerializable>
 
 @property (nonatomic, strong) NSString *email;
 @property (nonatomic, strong) NSString *password;
